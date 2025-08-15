@@ -1,0 +1,96 @@
+spriteTypes = {
+	
+	##################################################
+	###                                            ###
+	###                 Ship Components            ###
+	###                                            ###
+	##################################################
+	
+	##########     Auras     #########
+
+	
+	spriteType = { 	name = "GFX_bio_x" 	textureFile = "gfx\interface\icons\ship_parts\bio_x.dds" }
+	spriteType = { 	name = "GFX_hs" 	textureFile = "gfx\interface\icons\ship_parts\hs.dds" }
+	spriteType = { 	name = "GFX_bo_sk" 	textureFile = "gfx\interface\icons\ship_parts\bo_sk.dds" }
+	spriteType = { 	name = "GFX_bo_ms" 	textureFile = "gfx\interface\icons\ship_parts\bo_ms.dds" }
+	spriteType = { 	name = "GFX_TL" 	textureFile = "gfx\interface\icons\ship_parts\TL.dds" }
+	spriteType = { 	name = "GFX_amr" 	textureFile = "gfx\interface\icons\ship_parts\amr.dds" }
+	spriteType = { 	name = "GFX_spau" 	textureFile = "gfx\interface\icons\ship_parts\sp_au.dds" }
+	spriteType = { 	name = "GFX_hrt" 	textureFile = "gfx\interface\icons\ship_parts\hrt.dds" }
+	spriteType = { 	name = "GFX_pt_shot" 	textureFile = "gfx\interface\icons\ship_parts\pt_shot.dds" }
+	spriteType = { 	name = "GFX_sp_m" 	textureFile = "gfx\interface\icons\ship_parts\sp_m.dds" }
+	spriteType = { 	name = "GFX_lz_l" 	textureFile = "gfx\interface\icons\ship_parts\lz_l.dds" }
+	spriteType = { 	name = "GFX_lz_m" 	textureFile = "gfx\interface\icons\ship_parts\lz_m.dds" }
+	spriteType = { 	name = "GFX_lz_s" 	textureFile = "gfx\interface\icons\ship_parts\lz_s.dds" }
+	spriteType = { 	name = "GFX_zc_s" 	textureFile = "gfx\interface\icons\ship_parts\zc_s.dds" }
+	spriteType = { 	name = "GFX_zc_m" 	textureFile = "gfx\interface\icons\ship_parts\zc_m.dds" }
+	spriteType = { 	name = "GFX_zc_l" 	textureFile = "gfx\interface\icons\ship_parts\zc_l.dds" }
+	spriteType = { 	name = "GFX_sp_s" 	textureFile = "gfx\interface\icons\ship_parts\sp_s.dds" }
+	spriteType = { 	name = "GFX_ms_s" 	textureFile = "gfx\interface\icons\ship_parts\ms_s.dds" }
+	spriteType = { 	name = "GFX_ms_m" 	textureFile = "gfx\interface\icons\ship_parts\ms_m.dds" }
+	spriteType = { 	name = "GFX_ms_l" 	textureFile = "gfx\interface\icons\ship_parts\ms_l.dds" }
+	spriteType = { 	name = "GFX_fz_st" 	textureFile = "gfx\interface\icons\ship_parts\fz_st.dds" }
+	spriteType = { 	name = "GFX_yz_st" 	textureFile = "gfx\interface\icons\ship_parts\yz_st.dds" }
+	spriteType = { 	name = "GFX_otm_l" 	textureFile = "gfx\interface\icons\ship_parts\otm_l.dds" }
+	spriteType = { 	name = "GFX_otm_m" 	textureFile = "gfx\interface\icons\ship_parts\otm_m.dds" }
+	spriteType = { 	name = "GFX_otm_s" 	textureFile = "gfx\interface\icons\ship_parts\otm_s.dds" }
+	spriteType = { 	name = "GFX_lzz_l" 	textureFile = "gfx\interface\icons\ship_parts\lzz_l.dds" }
+	spriteType = { 	name = "GFX_lzz_m" 	textureFile = "gfx\interface\icons\ship_parts\lzz_m.dds" }
+	spriteType = { 	name = "GFX_lzz_s" 	textureFile = "gfx\interface\icons\ship_parts\lzz_s.dds" }
+	spriteType = { 	name = "GFX_mss_l" 	textureFile = "gfx\interface\icons\ship_parts\mss_l.dds" }
+	spriteType = { 	name = "GFX_mss_m" 	textureFile = "gfx\interface\icons\ship_parts\mss_m.dds" }
+	spriteType = { 	name = "GFX_mss_s" 	textureFile = "gfx\interface\icons\ship_parts\mss_s.dds" }
+	spriteType = { 	name = "GFX_kk_l" 	textureFile = "gfx\interface\icons\ship_parts\kk_l.dds" }
+	spriteType = { 	name = "GFX_kk_m" 	textureFile = "gfx\interface\icons\ship_parts\kk_m.dds" }
+	spriteType = { 	name = "GFX_kk_s" 	textureFile = "gfx\interface\icons\ship_parts\kk_s.dds" }
+	spriteType = { 	name = "GFX_k_st" 	textureFile = "gfx\interface\icons\ship_parts\k_st.dds" }
+	spriteType = { 	name = "GFX_sp_gz" 	textureFile = "gfx\interface\icons\ship_parts\sp_gz.dds" }
+	spriteType = { 	name = "GFX_sp_lzz" 	textureFile = "gfx\interface\icons\ship_parts\sp_lzz.dds" }
+	spriteType = { 	name = "GFX_ststp" 	textureFile = "gfx\interface\icons\ship_parts\stst_ppp.dds" }
+	spriteType = { 	name = "GFX_jn_lz" 	textureFile = "gfx\interface\icons\ship_parts\jn_lz.dds" }
+	spriteType = { 	name = "GFX_drnn" 	textureFile = "gfx\interface\icons\ship_parts\drnn.dds" }
+	spriteType = { 	name = "GFX_ms_spa" 	textureFile = "gfx\interface\icons\ship_parts\ms_spa.dds" }
+	spriteType = { 	name = "GFX_powc" 	textureFile = "gfx\interface\icons\ship_parts\powc.dds" }
+	spriteType = { 	name = "GFX_sscc" 	textureFile = "gfx\interface\icons\ship_parts\sscc.dds" }
+	spriteType = { 	name = "GFX_sura" 	textureFile = "gfx\interface\icons\ship_parts\aruu.dds" }
+	spriteType = { 	name = "GFX_au" 	textureFile = "gfx\interface\icons\ship_parts\au.dds" }
+	spriteType = { 	name = "GFX_arru" 	textureFile = "gfx\interface\icons\ship_parts\tts.dds" }
+	spriteType = { 	name = "GFX_sub_nll_laser" 	textureFile = "gfx\interface\icons\ship_parts\sub_nll_laser.dds" }
+	spriteType = { 	name = "GFX_super_nll_laser" 	textureFile = "gfx\interface\icons\ship_parts\super_nll_laser.dds" }
+	spriteType = { 	name = "GFX_ksp_a" 	textureFile = "gfx\interface\icons\ship_parts\ksp_a.dds" }
+	spriteType = { 	name = "GFX_gsw_kn" 	textureFile = "gfx\interface\icons\crisis\gsw_kn.dds" noOfFrames = 2 }
+	
+
+
+	spriteType = {
+		name = "GFX_forgotten_level_1_btn"
+ 		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl1_btn.dds"
+  		noOfFrames = 2			
+  	}
+  	spriteType = {
+		name = "GFX_forgotten_level_2_btn"
+  		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl2_btn.dds"
+  		noOfFrames = 2			
+	}
+   	spriteType = {
+  		name = "GFX_forgotten_level_3_btn"
+   		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl3_btn.dds"
+  		noOfFrames = 2	
+  	}		
+	spriteType = {
+   		name = "GFX_forgotten_level_4_btn"
+   		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl4_btn.dds"
+  		noOfFrames = 2			
+   	}
+  	spriteType = {
+  		name = "GFX_forgotten_level_5_btn"
+  		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl5_btn.dds"
+  		noOfFrames = 2			
+  	}
+
+	spriteType = {
+		name = "GFX_gg_become_the_crisis"
+		texturefile = "gfx/interface/icons/ascension_perks/fg_cs.dds"
+		alwaystransparent = yes
+	}
+}

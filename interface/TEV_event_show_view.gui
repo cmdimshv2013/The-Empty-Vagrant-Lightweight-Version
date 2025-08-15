@@ -1,0 +1,459 @@
+guiTypes = {
+	### DEFAULT EVENT OPTION ###
+
+	#containerWindowType = {
+	#	name = "event_option_entry"
+	#	position = { x=0 y=0 }
+	#	size = { width = 388 height = 30 }
+	#	moveable = no
+	#	
+	#	buttonType = {
+	#		name = "option_button"
+	#		quadTextureSprite = "GFX_event_button_452"
+	#		position = { x=0 y=8 }
+	#		font = "cg_16b"
+	#		text = "OPTION_TEXT"
+	#	}
+	#	
+	#	OverlappingElementsBoxType = {
+	#		name = "trigger_icons"
+	#		position = { x = 0  y = 10 }
+	#		size = { x=65 y= 28 }
+	#	}
+	#}
+
+	### DEFAULT EVENT WINDOW ###
+
+	containerWindowType = {
+		name = "TEV_event_show_window_test"
+		orientation = center
+		origo = center
+		moveable = yes
+		size = { width = 458 height = 170 }
+		#size = { width = 940 height = 550 }
+
+		#background = {
+		#	name = "background"
+		#	quadTextureSprite ="GFX_tile_large_bg"
+		#}
+		
+		
+		background = {
+			name = "background"
+			spriteType = "GFX_tile_outliner_bg_solid"
+		}
+		
+		#关闭
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_close"
+			position = { x=1 y = 1 }
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+		}
+		
+
+		#############################
+		#影响力菜单
+		containerWindowType = {
+			name = "influence_menu"
+			size = { width = 325 height = 420 }
+			orientation = upper_left
+			#position = { x = 100 y = 104 }
+			position = { x = 100 y = 104 }
+			#verticalScrollBar = "right_vertical_slider_s"
+		
+			
+			#instantTextBoxType={ name = "gui_investment_menu_show" font = "malgun_goth_24" }
+			#buttonType = {
+			#	name = "empire_flag"
+			#	quadTextureSprite = "GFX_empire_flag_32"
+			#	position = { x = 25 y = 235 }
+			#	
+			#	orientation = UPPER_LEFT
+			#}
+		}
+		
+		#####################
+		
+		iconType = {
+			name = "hex_bg"
+			spriteType = "GFX_hex_bg"
+			position = { x = -21 y = -12 }
+			alwaysTransparent = yes
+		}
+
+		iconType = {
+			name = "empire_header_line"
+			quadTextureSprite = "GFX_line_long"
+			position = { x = 1000001 y = 22 }
+			alwaysTransparent = yes
+		}
+		
+		#buttonType = {
+		#	name = "focus_button"
+		#	position = { x = 100 y = 13 }
+		#	orientation = "UPPER_RIGHT"
+		#	spriteType = "GFX_fleetview_focus"
+		#	buttonFont = "cg_16b"
+		#	shortcut = "q"
+		#}
+		
+
+		instantTextBoxType = {
+			name = "heading"
+			font = "malgun_goth_24"
+			text = "DIPLOMACY"
+			position = { x = 10000010 y = 5 }
+			maxWidth = 543
+			maxHeight = 22
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		buttonType = {
+			name = "focus_button"
+			position = { x = 100 y = 13 }
+			orientation = "UPPER_RIGHT"
+			spriteType = "GFX_fleetview_focus"
+			buttonFont = "cg_16b"
+			shortcut = "q"
+		}
+		#改动
+		buttonType = {
+			name = "alien_message_background"
+			size = { x = 430 y = 100 }
+			position = { x = 10 y = 30 }
+			#size = { x = 425 y = 330 }
+			#position = { x = 495 y = 60 }
+			spriteType = "GFX_tiles_dark_area_cut_8"
+			alwaysTransparent = yes
+		}
+		#改动，文本框
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "cg_16b"
+			position = { x = 20 y = 35 }
+			#position = { x = 505 y = 65 }
+			maxWidth = 425
+			maxHeight = 126
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+		
+		buttonType = {
+			name = "confirm_button"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			position = { x=75 y = 64  }
+			Orientation = "UPPER_RIGHT"
+			font = "cg_16b"
+			text = "MESSAGE_OK"
+			clicksound = "confirmation"
+		}
+
+		### PORTRAIT ###
+
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = 100017 y = 100045 }
+			size = { width = 964 height = 350 }
+			clipping = yes
+			
+			iconType = {
+				name = "event_picture"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = { x = 10006 y = 10005 }
+			}
+			
+			iconType = {
+				name = "portrait"
+				position = { x = 1000250 y = 10000 }
+				spriteType = "GFX_portrait_character"
+			}	
+		}
+		
+		containerWindowType = {
+			name = "portrait"
+			position = { x = 100017 y = 100045 }
+			size = { width = 964 height = 350 }
+			clipping = yes
+			
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_gamesetup_mask"
+				alwaysTransparent = yes
+			}
+					
+			iconType = {
+				name = "black_frame"
+				spriteType = "GFX_diplomacy_portrait_shadow_frame"
+				position = { x = 10004 y = 10005}
+				alwaysTransparent = yes
+			}
+			
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_diplomacy_stripes_2"
+				alwaysTransparent = yes
+			}
+				
+			iconType = {
+				name = "city_frame"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = { x = 10006 y = 10005 }
+				alwaysTransparent = yes
+			}
+		}
+
+		### EMPIRE INFO ###
+		
+		iconType = {
+			name = "empire_info_bg"
+			spriteType = "GFX_diplomacy_dark_fade_bg"
+			position = { x = 100033 y = 100064 }
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType={
+			name = "empire_name"
+			font = "malgun_goth_24"
+			text = "Kammarian Galactic Concordat"
+			position = { x = 100045 y = 100070 }
+			maxWidth = 450
+			maxHeight = 16
+			format = LEFT
+			text_color_code = "E"
+			fixedsize = yes
+		}
+
+		instantTextBoxType={
+			name = "empire_government_type"
+			font = "cg_16b"
+			text = "Autocracy"
+			position = { x = 100045 y = 100095	}
+			maxWidth = 250
+			maxHeight = 16
+			format = LEFT
+			fixedsize = yes
+			text_color_code = "Y"
+		}
+		
+		instantTextBoxType={
+			name = "empire_personality_type"
+			font = "cg_16b"
+			text = "Despicable Neutrals"
+			position = { x = 100045 y = 1000112	}
+			maxWidth = 250
+			maxHeight = 16
+			format = LEFT
+			fixedsize = yes
+		}
+
+		OverlappingElementsBoxType = {
+			name = "empire_ethics_icons"
+			position = { x = 100045 y = 1000138 }
+			size = { x = 1000240 y = 100030 }
+			spacing = 2.0
+			format = left
+		}
+
+		buttonType = {
+			name = "empire_flag"
+			quadTextureSprite = "GFX_empire_flag_128"
+			position = { x = 1000020 y = 73 }
+			orientation = UPPER_LEFT
+		}
+		
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = 100025 y = 100075 }
+			
+			containerWindowType = {
+				name = "empire_traits_box"
+				position = { x = 10000 y = 10005 }
+				size = { width = 210 height = 75 }
+
+				#background = {
+				#	name = "ethics_bg"
+				#	spriteType = "GFX_tiles_dark_area_cut_8"
+				#}
+			}
+			
+			instantTextBoxType = {
+				name = "empire_traits_label"
+				position = { x = 1000214 y = 100037 }
+				font = "cg_16b"
+				maxWidth = 230
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				#text_color_code = "E"
+				text = "RULER_TRAITS"
+				alwaysTransparent = yes
+			}
+		
+			overlappingElementsBoxType = {
+				name = "leader_traits"
+				position = { x = 1000215 y = 100055 }
+				size = { x = 1000125 y = 1000330 }
+			}
+	
+			instantTextBoxType = {
+				name = "leader_name"
+				position = { x = 100010 y = 10000 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				text = "Leader Name"
+				text_color_code = "E"
+			}
+	
+			instantTextBoxType = {
+				name = "leader_species"
+				position = { x = 100010 y = 100018 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				text = "Leader Species"
+				format = left
+			}
+		}
+
+		### OPINION
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = 100027 y = 1000110 }
+			size = { width = 94 height = 30 }
+			
+			# Use this for tooltip area, picture comes from somewhere else
+			#background = {
+			#	name = "opinion_bg"
+			#	spriteType = "GFX_tiled_window_transparent"
+			#}
+			
+			iconType = {
+				name = "their_opinion_icon"
+				spriteType = "GFX_diplomacy_opinion"
+				position = { x = 10007 y = 10004 }
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "their_opinion"
+				font = "cg_16b"
+				maxWidth = 40
+				position = { x = 100040 y = 10007 }
+				format = left
+				text = "100"
+				alwaysTransparent = yes
+			}
+		}
+		
+		### EVENT DIPLO ###
+		
+		#containerWindowType = {
+		#	name = "EVENT_DIPLO"
+		#	position = { x = 450 y = 20 }
+		#	size = { width=963 height=520 }
+		#	moveable = no
+		#	
+		#	instantTextBoxType={
+		#		name = "action_title"
+		#		font = "malgun_goth_24"
+		#		position = { x = -420 y = 25 }
+		#		maxWidth = 420
+		#		alwaysTransparent = yes
+		#	}
+		#	
+		#	instantTextBoxType={
+		#		name = "action_desc"
+		#		font = "malgun_goth_24"
+		#		position = { x = 1490 y = 1100 }
+		#		maxWidth = 500
+		#		maxHeight = 180
+		#		Orientation = "UPPER_LEFT"
+		#		format = center
+		#		alwaysTransparent = yes
+		#		text_color_code = "H"
+		#	}
+		#	
+		#	#增加/减少投资
+		#	#instantTextBoxType = {
+		#	#	name = "ui_investment_menu_show_txt3"
+		#	#	font = "cg_16b"
+		#	#	text = "DE_button_real_investment_text"
+		#	#	position = { x = 0 y = 468 }
+		#	#	maxWidth = 495
+		#	#	maxHeight = 55
+		#	#	fixedSize = yes
+		#	#	format = center
+		#	#	text_color_code = "W"
+		#	#	alwaysTransparent = yes
+		#	#}
+		#	##测试效果
+		#	#effectButtonType = {
+		#	#	name = "gui_investment_menu_button_5"
+		#	#	position = { x = 10 y = 460 }
+		#	#	#spriteType = "GFX_menu_icon_test_1"
+		#	#	quadTextureSprite = "GFX_event_button_452"
+		#	#	scale = 1
+		#	#	
+		#	#	effect = "DE_button_effect_real_investment_country_effect"
+		#	#	orientation = upper_left
+		#	#	clicksound = interface
+		#	#	oversound = mouse_over
+		#	#}
+		#	
+		#	listboxType = {
+		#		name = "option_list"
+		#		position = { x = -60 y = -85 }
+		#		backGround=""
+		#		size = { x=452 y=500 }
+		#		spacing = 1
+		#		scrollbartype = "standardlistbox_slider"
+		#		borderSize = { x = 100 y = 100 }
+		#		Orientation = "UPPER_LEFT"
+		#	}
+		#}
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 0 y = 30 }
+			size = { width=563 height=220 }
+			moveable = no
+			
+			instantTextBoxType={
+				name = "action_title"
+				font = "malgun_goth_24"
+				position = { x = 20 y = -26 }
+				maxWidth = 520
+				alwaysTransparent = yes
+			}
+			
+			#instantTextBoxType={
+			#	name = "action_desc"
+			#	font = "malgun_goth_24"
+			#	position = { x = 490 y = 0 }
+			#	maxWidth = 500
+			#	maxHeight = 180
+			#	Orientation = "UPPER_LEFT"
+			#	format = center
+			#	alwaysTransparent = yes
+			#	text_color_code = "H"
+			#}
+			
+			listboxType = {
+				name = "option_list"
+				position = { x = -10 y = 100 }
+				backGround=""
+				size = { x=462 y=100 }
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+		}
+	}
+}

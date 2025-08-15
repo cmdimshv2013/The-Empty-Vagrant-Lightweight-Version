@@ -1,0 +1,52 @@
+namespace = ckck_event
+
+country_event = {
+	id = ckck_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			check_modifier_value = { modifier = sg_instant_kill_shot_add value > 0 }
+			NAND = { is_variable_set = sg_instant_kill_shot_finished check_variable = { which = sg_instant_kill_shot_finished value >= modifier:sg_instant_kill_shot_add } }
+		}
+	}
+	immediate = {
+		fromfrom = {
+				if = { limit = { NOT = { is_variable_set = sg_instant_kill_shot_finished } } set_variable = { which = sg_instant_kill_shot_finished value = 1 } }
+				else = { change_variable = { which = sg_instant_kill_shot_finished value = 1 } }
+		}
+	}
+}
+country_event = {
+	id = ckck_event.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		fromfrom={
+			fleet_event = {
+				id = ckck_event.98
+			}
+		}
+	}
+}
+fleet_event = {
+	id = ckck_event.98
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_ship = {
+				ship_event = { id = ckck_event.99 }
+			}
+	}
+}
+ship_event = {
+	id = ckck_event.99
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { 
+		check_modifier_value = { modifier = sg_instant_kill_shot_add value > 0 }
+	}
+	immediate = {
+		set_variable = { which = sg_instant_kill_shot_finished value = 0 } 
+	}
+}

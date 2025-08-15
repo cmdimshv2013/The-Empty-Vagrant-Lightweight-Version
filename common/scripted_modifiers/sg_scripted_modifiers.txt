@@ -1,0 +1,2 @@
+sg_extra_life_add = { percentage = no good = yes category = ship }
+sg_instant_kill_shot_add = { percentage = no good = yes category = ship }

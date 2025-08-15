@@ -1,0 +1,31 @@
+
+gg_become_the_crisis = {
+	potential = {
+		NOR = {
+			has_ascension_perk = ap_become_the_crisis
+			has_ascension_perk = ap_cosmogenesis
+			has_ascension_perk = gg_become_the_crisis
+			has_ascension_perk = ap_behemoths
+		}
+		has_civic = civic_empty_vagrant
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_independence"
+			is_subject = no
+		}
+	}
+
+	on_enabled = {
+		activate_crisis_progression = forgotten_path
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

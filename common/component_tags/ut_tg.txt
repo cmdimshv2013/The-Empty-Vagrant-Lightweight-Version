@@ -1,0 +1,8 @@
+weapon_type_sg
+weapon_type_alk
+weapon_type_df_mdf
+weapon_type_ac_mdf
+weapon_type_kcdc_l
+weapon_type_kcdc_xl
+weapon_type_kcdc_m
+weapon_type_kcdc_s

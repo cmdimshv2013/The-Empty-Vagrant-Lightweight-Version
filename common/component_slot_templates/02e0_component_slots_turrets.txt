@@ -1,0 +1,24 @@
+11invisible_small_turret = {
+	size = small
+	component = weapon
+}
+invisible_agg_m_turret = {
+	size = meidum
+	component = weapon
+}
+invisible_medium1_turret = {
+	size = medium
+	component = weapon
+} 
+11invisible_large_turret = {
+	size = large
+	component = weapon
+}
+11invisible_xl_turret = {
+	size = extra_large
+	component = weapon
+}
+11invisible_t_turret = {
+	size = titanic
+	component = weapon
+}

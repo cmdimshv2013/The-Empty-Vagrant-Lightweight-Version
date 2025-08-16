@@ -1,12 +1,11 @@
 #有机体AI
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_1"
+	#allow_buildable_trigger = is_default_ev_ai
 	ship_size = homeless_ship
-#	is_event_design = yes
 	section = {
 		template = "homeless_small_2_key"
 		slot = "mid"
-		
 		#component = {
 		#	slot = "PD_01"
 		#	template = ""
@@ -18,38 +17,35 @@ ship_design = {
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "ark_produce_energy_medium_1"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "ark_produce_food_medium_1"
-		}	
-		
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "homeless_space_research_base_1"
-		}		
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_minerals_small_1"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_small_1"
-		}		
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_consumer_goods_small_1"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_consumer_goods_small_1"
-		}	
+		}
 	}
-	
 	section = {
 		template = "homeless_very_small_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "homeless_space_research_base_1"
@@ -59,12 +55,9 @@ ship_design = {
 			template = "ark_produce_alloys_small_1"
 		}
 	}
-	
 	section = {
 		template = "homeless_very_small_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_manpower_1"
@@ -74,23 +67,20 @@ ship_design = {
 			template = "ark_produce_food_medium_1"
 		}
 	}
-	
 	required_component = "HOMELESS_FISSION_REACTOR"
 	required_component = "HYPER_DRIVE_1"
 	required_component = "HOMELESS_SHIP_THRUSTER_1"
 	required_component = "SENSOR_1"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_2"
 	ship_size = homeless_ship
-	is_event_design = yes
+	#is_event_design = yes
 	section = {
 		template = "homeless_medium_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = "ark_produce_consumer_goods_modifier_1"
@@ -107,46 +97,38 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_rare_crystals_medium_1"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_minerals_large_1"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_exotic_gases_medium_1"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_medium_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_1"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_minerals_medium_1"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_energy_medium_1"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_alloys_small_1"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_small_2_key_stern_2"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_manpower_1"
@@ -168,14 +150,12 @@ ship_design = {
 			template = "homeless_space_research_base_1"
 		}
 	}
-	
 	required_component = "HOMELESS_FUSION_REACTOR"
 	required_component = "HYPER_DRIVE_1"
 	required_component = "HOMELESS_SHIP_THRUSTER_2"
 	required_component = "SENSOR_2"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_3"
@@ -184,7 +164,6 @@ ship_design = {
 	section = {
 		template = "homeless_medium_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = "ark_produce_consumer_goods_modifier_2"
@@ -201,46 +180,38 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_rare_crystals_medium_2"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_minerals_large_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_exotic_gases_medium_2"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_medium_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_minerals_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_energy_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_alloys_small_2"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_small_2_key_stern_2"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_manpower_1"
@@ -262,14 +233,12 @@ ship_design = {
 			template = "ark_produce_alloys_small_2"
 		}
 	}
-	
 	required_component = "HOMELESS_FUSION_REACTOR"
 	required_component = "HYPER_DRIVE_1"
 	required_component = "HOMELESS_SHIP_THRUSTER_2"
 	required_component = "SENSOR_2"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_4"
@@ -278,7 +247,6 @@ ship_design = {
 	section = {
 		template = "homeless_large_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = "ark_produce_energy_modifier_3"
@@ -295,66 +263,58 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_large_2"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_large_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_minerals_large_2"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_large_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_consumer_goods_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_alloys_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_food_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_food_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_energy_medium_2"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_07"
 			template = "homeless_space_research_base_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "homeless_space_research_base_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "homeless_space_research_base_3"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_large_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_manpower_1"
@@ -400,14 +360,12 @@ ship_design = {
 			template = "ark_produce_alloys_small_2"
 		}
 	}
-	
 	required_component = "HOMELESS_ANTIMATTER_REACTOR"
 	required_component = "HYPER_DRIVE_2"
 	required_component = "HOMELESS_SHIP_THRUSTER_3"
 	required_component = "SENSOR_3"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_5"
@@ -416,7 +374,6 @@ ship_design = {
 	section = {
 		template = "homeless_large_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = "ark_produce_minerals_modifier_4"
@@ -433,66 +390,58 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_large_3"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_large_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_minerals_large_3"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_large_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_consumer_goods_medium_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_alloys_medium_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_food_medium_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_food_medium_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_energy_medium_3"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_07"
 			template = "homeless_space_research_base_4"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "homeless_space_research_base_4"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "homeless_space_research_base_4"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_large_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_manpower_2"
@@ -538,27 +487,21 @@ ship_design = {
 			template = "ark_produce_alloys_small_3"
 		}
 	}
-	
 	required_component = "HOMELESS_ZERO_POINT_REACTOR"
 	required_component = "HYPER_DRIVE_3"
 	required_component = "HOMELESS_SHIP_THRUSTER_4"
 	required_component = "SENSOR_4"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
-
-
-
 
 #机械AI（不需要食物和消费品
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_1_machine"
 	ship_size = homeless_ship
-#	is_event_design = yes
+	#	is_event_design = yes
 	section = {
 		template = "homeless_small_2_key"
 		slot = "mid"
-		
 		#component = {
 		#	slot = "PD_01"
 		#	template = ""
@@ -570,38 +513,35 @@ ship_design = {
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "ark_produce_energy_medium_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "ark_produce_energy_medium_1_machine"
-		}	
-		
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "homeless_space_research_base_1_machine"
-		}		
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_minerals_small_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_small_1_machine"
-		}		
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "homeless_space_research_base_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_minerals_small_1_machine"
-		}	
+		}
 	}
-	
 	section = {
 		template = "homeless_very_small_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "homeless_space_research_base_1_machine"
@@ -611,12 +551,9 @@ ship_design = {
 			template = "ark_produce_alloys_small_1_machine"
 		}
 	}
-	
 	section = {
 		template = "homeless_very_small_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_energy_strike_craft_1_machine"
@@ -626,14 +563,12 @@ ship_design = {
 			template = "ark_produce_alloys_small_1_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_FISSION_REACTOR"
 	required_component = "HYPER_DRIVE_1"
 	required_component = "HOMELESS_SHIP_THRUSTER_1"
 	required_component = "SENSOR_1"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_2_machine"
@@ -642,7 +577,6 @@ ship_design = {
 	section = {
 		template = "homeless_medium_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = ""
@@ -659,46 +593,38 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_rare_crystals_medium_1_machine"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_minerals_large_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_exotic_gases_medium_1_machine"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_medium_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_minerals_medium_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_energy_medium_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_alloys_small_1_machine"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_small_2_key_stern_2"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_energy_medium_1_machine"
@@ -720,14 +646,12 @@ ship_design = {
 			template = "homeless_space_research_base_1_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_FUSION_REACTOR"
 	required_component = "HYPER_DRIVE_1"
 	required_component = "HOMELESS_SHIP_THRUSTER_2"
 	required_component = "SENSOR_2"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_3_machine"
@@ -736,7 +660,6 @@ ship_design = {
 	section = {
 		template = "homeless_medium_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = ""
@@ -753,46 +676,38 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_rare_crystals_medium_2_machine"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_minerals_large_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_exotic_gases_medium_2_machine"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_medium_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_minerals_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_energy_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_alloys_small_2_machine"
-		}	
-
+		}
 	}
-	
 	section = {
-		template = "homeless_small_2_key_stern_2_machine"
+		template = "homeless_small_2_key_stern_2"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_energy_strike_craft_1_machine"
@@ -814,14 +729,12 @@ ship_design = {
 			template = "ark_produce_alloys_small_2_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_FUSION_REACTOR"
 	required_component = "HYPER_DRIVE_2"
 	required_component = "HOMELESS_SHIP_THRUSTER_3"
 	required_component = "SENSOR_2"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_4_machine"
@@ -830,7 +743,6 @@ ship_design = {
 	section = {
 		template = "homeless_large_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = "ark_produce_energy_modifier_2_machine"
@@ -847,66 +759,58 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_large_2_machine"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_large_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_minerals_large_2_machine"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_large_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_alloys_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_alloys_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_07"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "homeless_space_research_base_3_machine"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_large_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_energy_strike_craft_1_machine"
@@ -952,14 +856,12 @@ ship_design = {
 			template = "ark_produce_alloys_small_2_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_ANTIMATTER_REACTOR"
 	required_component = "HYPER_DRIVE_2"
 	required_component = "HOMELESS_SHIP_THRUSTER_4"
 	required_component = "SENSOR_3"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_5_machine"
@@ -968,7 +870,6 @@ ship_design = {
 	section = {
 		template = "homeless_large_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = "ark_produce_energy_modifier_2_machine"
@@ -985,66 +886,58 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_large_3_machine"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_large_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_minerals_large_3_machine"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_large_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_alloys_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_alloys_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_07"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "homeless_space_research_base_3_machine"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_large_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_energy_strike_craft_1_machine"
@@ -1090,26 +983,21 @@ ship_design = {
 			template = "ark_produce_alloys_small_3_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_ANTIMATTER_REACTOR"
 	required_component = "HYPER_DRIVE_3"
 	required_component = "HOMELESS_SHIP_THRUSTER_4"
 	required_component = "SENSOR_4"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
-
-
 
 #蜂群AI（不需要消费品
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_1_hive_mind"
 	ship_size = homeless_ship
-#	is_event_design = yes
+	#	is_event_design = yes
 	section = {
 		template = "homeless_small_2_key"
 		slot = "mid"
-		
 		#component = {
 		#	slot = "PD_01"
 		#	template = ""
@@ -1121,38 +1009,35 @@ ship_design = {
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "ark_produce_food_medium_1_hive_mind"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "ark_produce_energy_medium_1_machine"
-		}	
-		
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "homeless_space_research_base_1_machine"
-		}		
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_minerals_small_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_food_small_1_hive_mind"
-		}		
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "homeless_space_research_base_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_minerals_small_1_machine"
-		}	
+		}
 	}
-	
 	section = {
 		template = "homeless_very_small_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "homeless_space_research_base_1_machine"
@@ -1162,12 +1047,9 @@ ship_design = {
 			template = "ark_produce_alloys_small_1_machine"
 		}
 	}
-	
 	section = {
 		template = "homeless_very_small_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_energy_strike_craft_1_machine"
@@ -1177,14 +1059,12 @@ ship_design = {
 			template = "ark_produce_alloys_small_1_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_FISSION_REACTOR"
 	required_component = "HYPER_DRIVE_1"
 	required_component = "HOMELESS_SHIP_THRUSTER_1"
 	required_component = "SENSOR_1"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_2_hive_mind"
@@ -1193,7 +1073,6 @@ ship_design = {
 	section = {
 		template = "homeless_medium_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = ""
@@ -1210,46 +1089,38 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_rare_crystals_medium_1_machine"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_minerals_large_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_exotic_gases_medium_1_machine"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_medium_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_minerals_medium_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_energy_medium_1_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_alloys_small_1_machine"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_small_2_key_stern_2"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_food_strike_craft_1_hive_mind"
@@ -1271,14 +1142,12 @@ ship_design = {
 			template = "homeless_space_research_base_1_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_FUSION_REACTOR"
 	required_component = "HYPER_DRIVE_1"
 	required_component = "HOMELESS_SHIP_THRUSTER_2"
 	required_component = "SENSOR_2"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_3_hive_mind"
@@ -1287,7 +1156,6 @@ ship_design = {
 	section = {
 		template = "homeless_medium_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = ""
@@ -1304,46 +1172,38 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_rare_crystals_medium_2_machine"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_minerals_large_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_exotic_gases_medium_2_machine"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_medium_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_minerals_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_energy_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_alloys_small_2_machine"
-		}	
-
+		}
 	}
-	
 	section = {
-		template = "homeless_small_2_key_stern_2_machine"
+		template = "homeless_small_2_key_stern_2"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_food_strike_craft_1_hive_mind"
@@ -1365,14 +1225,12 @@ ship_design = {
 			template = "ark_produce_alloys_small_2_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_FUSION_REACTOR"
 	required_component = "HYPER_DRIVE_2"
 	required_component = "HOMELESS_SHIP_THRUSTER_3"
 	required_component = "SENSOR_2"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_4_hive_mind"
@@ -1381,7 +1239,6 @@ ship_design = {
 	section = {
 		template = "homeless_large_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = "ark_produce_energy_modifier_2_machine"
@@ -1398,66 +1255,58 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_large_2_machine"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_large_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_minerals_large_2_machine"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_large_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_alloys_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_alloys_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_medium_2_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_07"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "homeless_space_research_base_3_machine"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_large_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_food_strike_craft_1_hive_mind"
@@ -1503,14 +1352,12 @@ ship_design = {
 			template = "ark_produce_alloys_small_2_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_ANTIMATTER_REACTOR"
 	required_component = "HYPER_DRIVE_2"
 	required_component = "HOMELESS_SHIP_THRUSTER_4"
 	required_component = "SENSOR_3"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
-
 
 ship_design = {
 	name = "NAME_start_homeless_ship_ai_5_hive_mind"
@@ -1519,7 +1366,6 @@ ship_design = {
 	section = {
 		template = "homeless_large_1_key"
 		slot = "mid"
-		
 		component = {
 			slot = "PD_01"
 			template = "ark_produce_energy_modifier_2_machine"
@@ -1536,66 +1382,58 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_large_3_machine"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_large_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "ark_produce_minerals_large_3_machine"
 		}
-		
 	}
-	
 	section = {
 		template = "homeless_large_1_key_bow"
 		slot = "bow"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "ark_produce_energy_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_02"
 			template = "ark_produce_alloys_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_03"
 			template = "ark_produce_alloys_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_04"
 			template = "ark_produce_minerals_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_05"
 			template = "ark_produce_energy_medium_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_06"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_07"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_08"
 			template = "homeless_space_research_base_3_machine"
-		}	
+		}
 		component = {
 			slot = "LARGE_GUN_09"
 			template = "homeless_space_research_base_3_machine"
-		}	
-
+		}
 	}
-	
 	section = {
 		template = "homeless_large_1_key_stern"
 		slot = "stern"
-		
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ark_produce_food_strike_craft_1_hive_mind"
@@ -1641,11 +1479,510 @@ ship_design = {
 			template = "ark_produce_alloys_small_3_machine"
 		}
 	}
-	
 	required_component = "HOMELESS_ANTIMATTER_REACTOR"
 	required_component = "HYPER_DRIVE_3"
 	required_component = "HOMELESS_SHIP_THRUSTER_4"
 	required_component = "SENSOR_4"
-	required_component = "COMBAT_COMPUTER_HOMELESS"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
 }
 
+
+
+#机械AI（不需要食物和消费品-船坞
+ship_design = {
+	name = "NAME_start_homeless_ship_ai_1_machine_starbase"
+	ship_size = homeless_ship_starbase
+	#	is_event_design = yes
+	section = {
+		template = "homeless_starbase_small_2_key"
+		slot = "mid"
+		#component = {
+		#	slot = "PD_01"
+		#	template = ""
+		#}
+		component = {
+			slot = "LARGE_GUN_07"
+			template = "ark_produce_energy_medium_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_08"
+			template = "ark_produce_energy_medium_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_09"
+			template = "ark_produce_energy_medium_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "homeless_space_research_base_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "ark_produce_minerals_small_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "ark_produce_minerals_small_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "homeless_space_research_base_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "ark_produce_minerals_small_1_machine"
+		}
+	
+		component = {
+			slot = "LARGE_GUN_11"
+			template = "homeless_space_research_base_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_13"
+			template = "ark_produce_alloys_small_1_machine"
+		}
+	
+	
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "ark_produce_energy_strike_craft_1_machine"
+		}
+		component = {
+			slot = "LARGE_GUN_12"
+			template = "ark_produce_alloys_small_1_machine"
+		}
+	}
+	required_component = "HOMELESS_FISSION_REACTOR"
+	required_component = "EV_HOMELESS_FISSION_REACTOR"
+	required_component = "HYPER_DRIVE_1"
+	required_component = "HOMELESS_SHIP_THRUSTER_1"
+	required_component = "SENSOR_1"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
+}
+
+
+##新版本的开局设计
+ship_design = {
+	name = "NAME_start_homeless_ship_course"
+	ship_size = homeless_ship
+	#	is_event_design = yes
+	section = {
+		template = "homeless_small_2_key"
+		slot = "mid"
+		#component = {
+		#	slot = "PD_01"
+		#	template = ""
+		#}
+		component = {
+			slot = "LARGE_GUN_07"
+			template = "ark_produce_minerals_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_08"
+			template = "ark_produce_food_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_09"
+			template = "ark_produce_energy_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "ark_produce_consumer_goods_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "ark_produce_consumer_goods_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "ark_produce_alloys_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "ark_produce_unity_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "ark_produce_food_small_new_1"
+		}
+	}
+	section = {
+		template = "homeless_very_small_1_key_bow"
+		slot = "bow"
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ark_produce_research_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "ark_produce_energy_medium_new_1"
+		}
+	}
+	section = {
+		template = "homeless_very_small_1_key_stern"
+		slot = "stern"
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "ark_produce_minerals_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ark_produce_minerals_medium_new_1"
+		}
+	}
+	required_component = "HOMELESS_FISSION_REACTOR"
+	required_component = "HYPER_DRIVE_1"
+	required_component = "HOMELESS_SHIP_THRUSTER_1"
+	required_component = "SENSOR_1"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
+}
+
+
+#-船坞
+ship_design = {
+	name = "NAME_start_homeless_ship_course_starbase"
+	ship_size = homeless_ship_starbase
+	#	is_event_design = yes
+	section = {
+		template = "homeless_starbase_small_2_key"
+		slot = "mid"
+		#component = {
+		#	slot = "PD_01"
+		#	template = ""
+		#}
+		component = {
+			slot = "PD_01"
+			template = "ark_produce_minerals_small_new_1"
+		}
+		component = {
+			slot = "PD_02"
+			template = "ark_produce_minerals_small_new_1"
+		}
+		
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "ark_produce_energy_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "ark_produce_research_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "ark_produce_research_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "ark_produce_unity_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "ark_produce_unity_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_07"
+			template = "ark_produce_minerals_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_08"
+			template = "ark_produce_minerals_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_09"
+			template = "ark_produce_energy_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_10"
+			template = "ark_produce_food_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_11"
+			template = "ark_produce_consumer_goods_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_13"
+			template = "ark_produce_consumer_goods_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_14"
+			template = "ark_produce_research_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_15"
+			template = "ark_produce_food_medium_new_1"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "ark_produce_alloys_medium_new_1"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "ark_produce_energy_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_12"
+			template = "ark_produce_energy_medium_new_1"
+		}
+
+
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_ARMOR_1"
+		}
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "SMALL_ARMOR_1"
+		}
+		component = {
+			slot = "SMALL_UTILITY_3"
+			template = "SMALL_ARMOR_1"
+		}
+		component = {
+			slot = "SMALL_UTILITY_4"
+			template = "SMALL_ARMOR_1"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_ARMOR_1"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_2"
+			template = "MEDIUM_ARMOR_1"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_3"
+			template = "MEDIUM_SHIELD_1"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_4"
+			template = "MEDIUM_SHIELD_1"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_5"
+			template = "MEDIUM_SHIELD_1"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_6"
+			template = "MEDIUM_SHIELD_1"
+		}
+
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_BOOSTER"
+		}
+	}
+	required_component = "HOMELESS_FISSION_REACTOR"
+	required_component = "EV_HOMELESS_FISSION_REACTOR"
+	required_component = "HYPER_DRIVE_1"
+	required_component = "HOMELESS_SHIP_THRUSTER_1"
+	required_component = "SENSOR_1"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
+}
+#3级引擎的家园舰船坞型
+ship_design = {
+	name = "NAME_start_homeless_ship_course_starbase_3"
+	ship_size = homeless_ship_starbase
+	#is_event_design = yes
+	section = {
+		template = "homeless_starbase_large_1_key"
+		slot = "mid"
+		#component = {
+		#	slot = "PD_01"
+		#	template = ""
+		#}
+		component = {
+			slot = "PD_01"
+			template = "ark_produce_alloys_small_new_1"
+		}
+		component = {
+			slot = "PD_02"
+			template = "ark_produce_alloys_small_new_1"
+		}
+		component = {
+			slot = "PD_03"
+			template = "ark_produce_alloys_small_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ark_produce_energy_large_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "ark_produce_research_large_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "ark_produce_research_large_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "ark_produce_research_large_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "ark_produce_unity_large_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "ark_produce_unity_large_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_07"
+			template = "ark_produce_minerals_large_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_08"
+			template = "ark_produce_minerals_large_new_1"
+		}
+		
+		component = {
+			slot = "LARGE_GUN_11"
+			template = "ark_produce_consumer_goods_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_12"
+			template = "ark_produce_minerals_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_13"
+			template = "ark_produce_consumer_goods_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_14"
+			template = "ark_produce_research_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_15"
+			template = "ark_produce_food_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_16"
+			template = "ark_produce_food_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_17"
+			template = "ark_produce_minerals_medium_new_1"
+		}
+		component = {
+			slot = "LARGE_GUN_18"
+			template = "ark_produce_research_medium_new_1"
+		}
+
+
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "ark_produce_volatile_motes_medium_new_1"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "ark_produce_exotic_gases_medium_new_1"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_03"
+			template = "ark_produce_rare_crystals_medium_new_1"
+		}
+
+
+
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_ARMOR_3"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_2"
+			template = "MEDIUM_ARMOR_3"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_3"
+			template = "MEDIUM_ARMOR_3"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_4"
+			template = "MEDIUM_SHIELD_3"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_5"
+			template = "MEDIUM_SHIELD_3"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_6"
+			template = "MEDIUM_SHIELD_3"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ARMOR_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ARMOR_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ARMOR_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHIELD_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_SHIELD_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_SHIELD_3"
+		}
+
+
+		#component = {
+		#	slot = "AUX_UTILITY_1"
+		#	template = "EV_REACTOR_BOOSTER_1"
+		#}
+		#component = {
+		#	slot = "AUX_UTILITY_1"
+		#	template = "EV_REACTOR_BOOSTER_1"
+		#}
+		#component = {
+		#	slot = "AUX_UTILITY_1"
+		#	template = "EV_REACTOR_BOOSTER_1"
+		#}
+
+	}
+	required_component = "HOMELESS_COLD_FUSION_REACTOR"
+	required_component = "EV_HOMELESS_COLD_FUSION_REACTOR"
+	required_component = "HYPER_DRIVE_3"
+	required_component = "HOMELESS_SHIP_THRUSTER_3"
+	required_component = "SENSOR_2"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
+}
+
+#补给船
+ship_design = {
+	name = "NAME_start_fleet_size_course"
+	ship_size = ev_fleet_size_ship
+	#	is_event_design = yes
+	section = {
+		template = "ev_fleet_size_ship_mid_PD_key"
+		slot = "mid"
+		#component = {
+		#	slot = "PD_01"
+		#	template = ""
+		#}
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "MEDIUM_BLUE_LASER"
+		}
+	}
+	required_component = "HOMELESS_FISSION_REACTOR"
+	required_component = "HYPER_DRIVE_1"
+	required_component = "HOMELESS_SHIP_THRUSTER_1"
+	required_component = "SENSOR_1"
+	required_component = "COMBAT_COMPUTER_HOMELESS_GUERRILLA"
+}

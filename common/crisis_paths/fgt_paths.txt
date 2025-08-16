@@ -1,0 +1,17 @@
+# Documentation in common/crisis_paths
+
+forgotten_path = {
+	crisis_currency = "asp_logic"
+
+	levels = {
+		forgotten_level_1
+		forgotten_level_2
+		forgotten_level_3
+		forgotten_level_4
+		forgotten_level_5
+	}
+
+	objectives = {
+		crisobj_fok
+	}
+}

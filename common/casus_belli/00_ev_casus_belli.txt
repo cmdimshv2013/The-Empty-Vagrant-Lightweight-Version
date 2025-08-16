@@ -7,28 +7,43 @@
 #	show_notification = no/yes	# optional (default = yes), flag to control whether this CB will generate a notification (to avoid duplicate 
 # 								# notification when a claim CB is generated)
 #}
+cb_base_ev = {
+	show_in_diplomacy = no
+	show_notification = no
+	potential = {
+		is_default_ev_country_type = yes
+	}
+	is_valid = {
+		always = yes
+	}
+}
+
 cb_hunger_ev = {
 	show_in_diplomacy = no
 	show_notification = no
 	potential = {
-		is_country_type = default_ev
-		
+		is_default_ev_country_type = yes
 	}
 	is_valid = {
 		has_total_war_cb = yes
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
-		
 		this = {
 			OR = {
 				is_country_type = awakened_fallen_empire
 				has_valid_civic = civic_fanatic_purifiers
 				has_valid_civic = civic_hive_devouring_swarm
 				has_valid_civic = civic_machine_assimilator
-			}		
+			}
 		}
 		from = {
 			NOR = {
@@ -38,7 +53,6 @@ cb_hunger_ev = {
 				has_valid_civic = civic_machine_assimilator
 			}
 		}
-		
 	}
 }
 
@@ -46,31 +60,33 @@ cb_purification_ev = {
 	show_in_diplomacy = no
 	show_notification = no
 	potential = {
-		is_country_type = default_ev
+		is_default_ev_country_type = yes
 	}
 	is_valid = {
 		has_total_war_cb = no
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
-		NOT = { is_overlord_to = FROM }
-		
+		NOT = {
+			is_overlord_to = FROM
+		}
 		this = {
 			AND = {
 				has_authority = auth_machine_intelligence
-				
-				has_valid_civic = civic_machine_terminator	
-			}		
+				has_valid_civic = civic_machine_terminator
+			}
 		}
 		from = {
 			NOR = {
 				has_authority = auth_machine_intelligence
-				
-				has_valid_civic = civic_machine_terminator	
+				has_valid_civic = civic_machine_terminator
 			}
 		}
-			
 	}
 }
 
@@ -78,34 +94,48 @@ cb_colossus_ev = {
 	show_in_diplomacy = no
 	show_notification = no
 	potential = {
-		is_country_type = default_ev
+		is_default_ev_country_type = yes
 		has_technology = "tech_colossus"
 		has_policy_flag = unrestricted_wars
 	}
 	is_valid = {
 		has_total_war_cb = no
-		any_owned_ship = { is_ship_size = colossus }
-		NOT = { is_overlord_to = FROM }
+		any_controlled_ship = {
+			is_ship_size = colossus
+		}
+		NOT = {
+			is_overlord_to = FROM
+		}
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
-		}	
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
+		}
 	}
-} 
+}
 
 cb_claim_ev = {
 	show_in_diplomacy = yes
 	show_notification = no
 	potential = {
-		is_country_type = default_ev
+		is_default_ev_country_type = yes
 	}
 	is_valid = {
 		has_claim = FROM
 		has_total_war_cb = no
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
 	}
 }
@@ -116,18 +146,22 @@ cb_subjugation_ev = {
 	potential = {
 		OR = {
 			OR = {
-				is_country_type = default_ev
+				is_default_ev_country_type = yes
 				is_country_type = default
 			}
 			is_country_type = awakened_fallen_empire
 		}
 		is_subject = no
 	}
-	is_valid = { 
-		NOT = { is_overlord_to = FROM }
-		is_country_type = awakened_fallen_empire 
-		NOT = { has_authority = auth_machine_intelligence }
-	}	
+	is_valid = {
+		NOT = {
+			is_overlord_to = FROM
+		}
+		is_country_type = awakened_fallen_empire
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+	}
 }
 
 cb_humiliation_ev = {
@@ -135,68 +169,96 @@ cb_humiliation_ev = {
 	show_notification = no
 	potential = {
 		OR = {
-			is_country_type = default_ev
+			is_default_ev_country_type = yes
 			is_country_type = fallen_empire
 		}
 	}
-	is_valid = {	
+	is_valid = {
 		OR = {
-			NOT = { has_policy_flag = liberation_wars }
-			from = { has_ethic = ethic_gestalt_consciousness }
+			NOT = {
+				has_policy_flag = liberation_wars
+			}
+			from = {
+				has_ethic = ethic_gestalt_consciousness
+			}
 		}
 		is_rival = FROM
 		has_total_war_cb = no
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
 	}
 }
-
-
 
 cb_despoliation_ev = {
 	show_in_diplomacy = no
 	show_notification = no
 	potential = {
 		OR = {
-			is_country_type = default_ev
+			is_default_ev_country_type = yes
 			is_country_type = default
 		}
 		has_valid_civic = civic_barbaric_despoilers
 	}
 	is_valid = {
 		has_total_war_cb = no
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
 	}
 }
-
-
 
 cb_stop_colossus_ev = {
 	show_in_diplomacy = no
 	show_notification = no
 	potential = {
 		OR = {
-			is_country_type = default_ev
+			is_default_ev_country_type = yes
 			is_country_type = default
 		}
 	}
 	is_valid = {
 		has_total_war_cb = no
-		from = { is_country_type = default_ev }
-		from = { any_owned_ship = { is_ship_size = colossus } }
-		NOT = { any_owned_ship = { is_ship_size = colossus } }
-		NOT = { is_overlord_to = FROM }
+		from = {
+			is_default_ev_country_type = yes
+		}
+		from = {
+			any_controlled_ship = {
+				is_ship_size = colossus
+			}
+		}
+		NOT = {
+			any_controlled_ship = {
+				is_ship_size = colossus
+			}
+		}
+		NOT = {
+			is_overlord_to = FROM
+		}
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
-		}		
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
+		}
 	}
 }
 
@@ -205,26 +267,30 @@ cb_containment_ev = {
 	show_notification = yes
 	potential = {
 		OR = {
-			is_country_type = default_ev
+			is_default_ev_country_type = yes
 			#is_country_type = default
 		}
 	}
-	
-	
 	is_valid = {
 		has_total_war_cb = no
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		this = {
 			NOR = {
 				is_country_type = awakened_fallen_empire
 				has_valid_civic = civic_fanatic_purifiers
 				has_valid_civic = civic_hive_devouring_swarm
 				has_valid_civic = civic_machine_assimilator
-				has_valid_civic = civic_machine_terminator	
+				has_valid_civic = civic_machine_terminator
 			}
 		}
 		from = {
@@ -233,7 +299,7 @@ cb_containment_ev = {
 				has_valid_civic = civic_fanatic_purifiers
 				has_valid_civic = civic_hive_devouring_swarm
 				has_valid_civic = civic_machine_assimilator
-				has_valid_civic = civic_machine_terminator	
+				has_valid_civic = civic_machine_terminator
 			}
 		}
 	}
@@ -244,13 +310,15 @@ cb_subject_ev = {
 	show_notification = no
 	potential = {
 		OR = {
-			is_country_type = default_ev
+			is_default_ev_country_type = yes
 			is_country_type = default
 		}
 		is_subject = yes
 	}
 	is_valid = {
-		overlord = { is_same_value = from }
+		overlord = {
+			is_same_value = from
+		}
 	}
 }
 
@@ -259,14 +327,14 @@ cb_open_borders_ev = {
 	show_in_diplomacy = yes
 	show_notification = yes
 	potential = {
-		is_country_type = default_ev
+		is_default_ev_country_type = yes
 		is_subject = no
-		NOR = { 
+		NOR = {
 			is_berserk_fallen_machine_empire = yes
 			has_valid_civic = civic_fanatic_purifiers
-			has_valid_civic = civic_machine_terminator	
-			has_valid_civic = civic_hive_devouring_swarm	
-			has_valid_civic = civic_machine_assimilator	
+			has_valid_civic = civic_machine_terminator
+			has_valid_civic = civic_hive_devouring_swarm
+			has_valid_civic = civic_machine_assimilator
 		}
 	}
 	is_valid = {
@@ -274,7 +342,9 @@ cb_open_borders_ev = {
 			has_closed_borders = ROOT
 		}
 		has_total_war_cb = no
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 	}
 }
 
@@ -283,34 +353,41 @@ cb_bombardment_steal_ev = {
 	show_in_diplomacy = yes
 	show_notification = yes
 	potential = {
-		is_country_type = default_ev
-		NOR = {	
-				has_ethic = "ethic_pacifist" 
-				has_ethic = "ethic_fanatic_pacifist" 
-			}
+		is_default_ev_country_type = yes
+		NOR = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 		is_subject = no
 	}
 	is_valid = {
-		FROM = { NOT = { has_country_flag = can_not_be_steal_ev } }
+		FROM = {
+			NOT = {
+				has_country_flag = can_not_be_steal_ev
+			}
+		}
 		has_total_war_cb = no
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 	}
 }
-
 
 #½ûÖ¹ÂÓ¶á×ÊÔ´
 cb_stop_bombardment_steal_ev = {
 	show_in_diplomacy = no
 	show_notification = no
 	potential = {
-		is_country_type = default		
+		is_country_type = default
 		is_subject = no
 	}
 	is_valid = {
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		from = {
 			OR = {
-				is_country_type = default_ev	
+				is_default_ev_country_type = yes
 			}
 		}
 	}
@@ -325,26 +402,30 @@ cb_end_country_ev = {
 			#is_country_type = default
 		}
 	}
-	
-	
 	is_valid = {
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		this = {
 			NOR = {
 				is_country_type = awakened_fallen_empire
 				has_valid_civic = civic_fanatic_purifiers
 				has_valid_civic = civic_hive_devouring_swarm
 				has_valid_civic = civic_machine_assimilator
-				has_valid_civic = civic_machine_terminator	
+				has_valid_civic = civic_machine_terminator
 			}
 		}
 		from = {
 			OR = {
-				is_country_type = default_ev	
+				is_default_ev_country_type = yes
 			}
 		}
 	}
@@ -356,20 +437,24 @@ cb_ev_scramble_hegemony = {
 	show_notification = yes
 	potential = {
 		OR = {
-			is_country_type = default_ev
+			is_default_ev_country_type = yes
 		}
 	}
-	
-	
 	is_valid = {
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		from = {
 			OR = {
-				is_country_type = default_ev	
+				is_default_ev_country_type = yes
 			}
 		}
 	}
@@ -380,16 +465,19 @@ cb_ev_orthodoxy = {
 	show_in_diplomacy = yes
 	show_notification = yes
 	potential = {
-
 	}
-	
-	
 	is_valid = {
 		OR = {
 			is_subject = no
-			overlord = { NOT = { is_same_value = from } }
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
 		}
-		NOT = { is_overlord_to = FROM }
+		NOT = {
+			is_overlord_to = FROM
+		}
 		has_opinion_modifier = {
 			who = from
 			modifier = opinion_ev_ship_rebal
@@ -397,3 +485,31 @@ cb_ev_orthodoxy = {
 	}
 }
 
+#¸½Ó¹
+cb_ev_subjugation = {
+	show_in_diplomacy = yes
+	show_notification = no
+	potential = {
+		OR = {
+			is_default_ev_country_type = yes
+			is_country_type = awakened_fallen_empire_ev
+		}
+		NOT = {
+			is_in_federation_with = from
+		}
+		is_subject = no
+	}
+	is_valid = {
+		from = {
+			OR = {
+				is_country_type = default
+			}
+		}
+		NOT = {
+			is_overlord_to = FROM
+		}
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+	}
+}

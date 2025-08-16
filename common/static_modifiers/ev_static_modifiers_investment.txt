@@ -18,8 +18,6 @@ ev_investment_energy_200 = {
 	country_base_energy_produces_add = 200
 }
 
-
-
 ev_investment_minerals_10 = {
 	country_base_minerals_produces_add = 10
 }
@@ -59,7 +57,6 @@ ev_investment_food_100 = {
 ev_investment_food_200 = {
 	country_base_food_produces_add = 200
 }
-
 
 ev_investment_consumer_goods_10 = {
 	country_base_consumer_goods_produces_add = 10

@@ -1,9 +1,7 @@
-
 create_1st_khan_fleet_ev = {
 	create_fleet = {
 		name = "NAME_Chosen_of_the_Great_Khan"
 		effect = {
-			
 			set_owner = event_target:raider_khanate_ev
 			while = {
 				count = 35
@@ -19,7 +17,6 @@ create_1st_khan_fleet_ev = {
 					random_existing_design = destroyer
 				}
 			}
-			
 			while = {
 				count = 16
 				create_ship = {
@@ -27,7 +24,6 @@ create_1st_khan_fleet_ev = {
 					random_existing_design = cruiser
 				}
 			}
-			
 			while = {
 				count = 8
 				create_ship = {
@@ -35,7 +31,6 @@ create_1st_khan_fleet_ev = {
 					random_existing_design = battleship
 				}
 			}
-			
 			while = {
 				count = 1
 				create_ship = {
@@ -43,7 +38,6 @@ create_1st_khan_fleet_ev = {
 					random_existing_design = titan
 				}
 			}
-			
 			#while = {
 			#	count = 28
 			#	create_ship = {
@@ -80,7 +74,10 @@ create_1st_khan_fleet_ev = {
 			#		graphical_culture = "pirate_01"
 			#	}
 			#}
-			add_modifier = { modifier = ev_great_Khan_fleet days = -1 }
+			add_modifier = {
+				modifier = ev_great_Khan_fleet
+				days = -1
+			}
 			assign_leader = event_target:great_khan_ev
 			set_location = {
 				target = event_target:marauder_rally_point_ev
@@ -88,11 +85,11 @@ create_1st_khan_fleet_ev = {
 				angle = random
 			}
 		}
-		settings = { 
-			can_upgrade = no 
+		settings = {
+			#can_upgrade = no 
 			can_disband = no
-			can_change_composition = no 
-			can_change_leader = no 
+			can_change_composition = no
+			can_change_leader = no
 			uses_naval_capacity = no
 		}
 	}
@@ -102,9 +99,7 @@ create_2nd_khan_fleet_ev = {
 	create_fleet = {
 		name = "NAME_Chosen_of_the_Great_Khan"
 		effect = {
-			
 			set_owner = event_target:raider_khanate_ev
-			
 			while = {
 				count = 25
 				create_ship = {
@@ -119,7 +114,6 @@ create_2nd_khan_fleet_ev = {
 					random_existing_design = destroyer
 				}
 			}
-			
 			while = {
 				count = 8
 				create_ship = {
@@ -127,7 +121,6 @@ create_2nd_khan_fleet_ev = {
 					random_existing_design = cruiser
 				}
 			}
-			
 			while = {
 				count = 4
 				create_ship = {
@@ -135,8 +128,6 @@ create_2nd_khan_fleet_ev = {
 					random_existing_design = battleship
 				}
 			}
-			
-			
 			#while = {
 			#	count = 28
 			#	create_ship = {
@@ -173,7 +164,10 @@ create_2nd_khan_fleet_ev = {
 			#		graphical_culture = "pirate_01"
 			#	}
 			#}
-			add_modifier = { modifier = ev_great_Khan_fleet days = -1 }
+			add_modifier = {
+				modifier = ev_great_Khan_fleet
+				days = -1
+			}
 			set_leader = exiled_khan
 			set_location = {
 				target = event_target:marauder_rally_point_ev
@@ -181,11 +175,11 @@ create_2nd_khan_fleet_ev = {
 				angle = random
 			}
 		}
-		settings = { 
-			can_upgrade = no 
+		settings = {
+			can_upgrade = no
 			can_disband = no
-			can_change_composition = no 
-			can_change_leader = no 
+			can_change_composition = no
+			can_change_leader = no
 			uses_naval_capacity = no
 		}
 	}
@@ -206,7 +200,6 @@ create_marauder_fleet_ev = {
 	}
 	create_fleet = {
 		effect = {
-			
 			set_owner = event_target:raider_khanate_ev
 			while = {
 				count = 25
@@ -222,7 +215,6 @@ create_marauder_fleet_ev = {
 					random_existing_design = destroyer
 				}
 			}
-			
 			while = {
 				count = 8
 				create_ship = {
@@ -230,7 +222,6 @@ create_marauder_fleet_ev = {
 					random_existing_design = cruiser
 				}
 			}
-			
 			while = {
 				count = 4
 				create_ship = {
@@ -238,7 +229,6 @@ create_marauder_fleet_ev = {
 					random_existing_design = battleship
 				}
 			}
-			
 			#while = {
 			#	count = 26
 			#	create_ship = {
@@ -275,8 +265,10 @@ create_marauder_fleet_ev = {
 			#		graphical_culture = "pirate_01"
 			#	}
 			#}
-			add_modifier = { modifier = ev_great_Khan_fleet days = -1 }
-			
+			add_modifier = {
+				modifier = ev_great_Khan_fleet
+				days = -1
+			}
 			assign_leader = last_created_leader
 			set_location = {
 				target = event_target:marauder_rally_point_ev
@@ -284,9 +276,9 @@ create_marauder_fleet_ev = {
 				angle = random
 			}
 		}
-		settings = { 
+		settings = {
 			uses_naval_capacity = no
-			can_upgrade = no 
+			can_upgrade = no
 			can_change_composition = no
 		}
 	}
@@ -316,11 +308,13 @@ create_marauder_armies_ev = {
 			set_location = {
 				target = event_target:marauder_rally_point_ev
 				distance = 20
-				angle = random 
+				angle = random
 			}
 		}
 	}
-	last_created_army = { assign_leader = last_created_leader }
+	last_created_army = {
+		assign_leader = last_created_leader
+	}
 }
 
 create_da_khan_marauder_armies_ev = {
@@ -347,19 +341,23 @@ create_da_khan_marauder_armies_ev = {
 			set_location = {
 				target = event_target:marauder_rally_point_ev
 				distance = 40
-				angle = random 
+				angle = random
 			}
 		}
 	}
-	last_created_army = { assign_leader = last_created_leader }
+	last_created_army = {
+		assign_leader = last_created_leader
+	}
 }
 
 create_marauder_constructors_ev = {
 	if = {
 		limit = {
 			event_target:raider_khanate_ev = {
-				count_owned_ships = {
-					limit = { is_ship_size = constructor }
+				count_owned_ship = {
+					limit = {
+						is_ship_size = constructor
+					}
 					count < 5
 				}
 			}
@@ -374,7 +372,7 @@ create_marauder_constructors_ev = {
 				set_location = {
 					target = event_target:marauder_rally_point_ev
 					distance = 20
-					angle = random 
+					angle = random
 				}
 			}
 		}
@@ -396,7 +394,6 @@ create_marauder_fleet_low_ev = {
 	}
 	create_fleet = {
 		effect = {
-			
 			set_owner = event_target:raider_khanate_ev
 			while = {
 				count = 10
@@ -412,7 +409,6 @@ create_marauder_fleet_low_ev = {
 					random_existing_design = destroyer
 				}
 			}
-			
 			while = {
 				count = 3
 				create_ship = {
@@ -420,7 +416,6 @@ create_marauder_fleet_low_ev = {
 					random_existing_design = cruiser
 				}
 			}
-			
 			while = {
 				count = 1
 				create_ship = {
@@ -428,9 +423,10 @@ create_marauder_fleet_low_ev = {
 					random_existing_design = battleship
 				}
 			}
-			
-			add_modifier = { modifier = ev_great_Khan_fleet days = -1 }
-			
+			add_modifier = {
+				modifier = ev_great_Khan_fleet
+				days = -1
+			}
 			assign_leader = last_created_leader
 			set_location = {
 				target = event_target:marauder_rally_point_ev
@@ -438,9 +434,79 @@ create_marauder_fleet_low_ev = {
 				angle = random
 			}
 		}
-		settings = { 
+		settings = {
 			uses_naval_capacity = no
-			can_upgrade = no 
+			can_upgrade = no
+			can_change_composition = no
+		}
+	}
+}
+
+#增员部队
+create_marauder_Increase_fleet_ev = {
+	create_leader = {
+		class = admiral
+		species = owner_main_species
+		name = random
+		skill = 3
+		leader_age_min = 25
+		leader_age_max = 45
+		traits = {
+			trait = leader_trait_mercenary_warrior
+			trait = random_trait
+		}
+	}
+	create_fleet = {
+		effect = {
+			set_owner = event_target:raider_khanate_ev
+			while = {
+				count = 10
+				create_ship = {
+					name = random
+					random_existing_design = corvette
+				}
+			}
+			while = {
+				count = 5
+				create_ship = {
+					name = random
+					random_existing_design = destroyer
+				}
+			}
+			random_list = {
+				1 = {
+					while = {
+						count = 2
+						create_ship = {
+							name = random
+							random_existing_design = cruiser
+						}
+					}
+				}
+				1 = {
+					while = {
+						count = 1
+						create_ship = {
+							name = random
+							random_existing_design = battleship
+						}
+					}
+				}
+			}
+			add_modifier = {
+				modifier = ev_great_Khan_fleet
+				days = -1
+			}
+			assign_leader = last_created_leader
+			set_location = {
+				target = event_target:marauder_rally_point_ev
+				distance = 45
+				angle = random
+			}
+		}
+		settings = {
+			uses_naval_capacity = no
+			can_upgrade = no
 			can_change_composition = no
 		}
 	}

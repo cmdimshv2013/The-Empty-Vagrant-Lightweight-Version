@@ -32,9 +32,14 @@
  ev_investment.10.name:0 "投资目标候选（星球）"
  ev_investment.10.desc:0 "欢迎来为[event_target:ev_real_country_option.GetName]投资，以下这些是我们能接受投资的星球..."
  
+
+ ev_investment.11.name:0 "是否同意在[event_target:ev_real_planet_option.GetName]进行投资"
+ ev_investment.11.desc:0 "我们选择了[event_target:ev_real_planet_option.GetName]，不知道贵国意下如何"
+ ev_investment.11.ok:0 "很好，继续下去吧"
+ ev_investment.11.end:0 "不，我想这应该被终止"
  
  ev_investment.20.name:0 "投资项目候选"
- ev_investment.20.desc:0 "这是这颗星球所能接受的投资选项，都写在这里了。"
+ ev_investment.20.desc:0 "这是这颗星球所能接受的投资选项，都写在这里了。\n\n影响力：[root.has_country_influence_show_3]\n[root.has_country_influence_show_2]"
  
  ev_investment.20.a:0 "1个 $building_factory_1$"
  ev_investment.20.a2:0 "2个 $building_factory_1$"

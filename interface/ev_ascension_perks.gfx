@@ -1,6 +1,25 @@
 
 spriteTypes = {
-	
+	spriteType = {
+		name = "GFX_ev_fleet_size_ships_buff"
+		texturefile = "gfx/interface/icons/ascension_perks/ev_fleet_size_ships_buff.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ev_strategic_strike_system"
+		texturefile = "gfx/interface/icons/ascension_perks/ev_strategic_strike_system.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ev_endless_homeless_ship_orbit_mining"
+		texturefile = "gfx/interface/icons/ascension_perks/ev_endless_homeless_ship_orbit_mining.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ev_unlock_megastructures_homeless_ship"
+		texturefile = "gfx/interface/icons/ascension_perks/ev_unlock_megastructures_homeless_ship.dds"
+		alwaystransparent = yes
+	}
 	spriteType = {
 		name = "GFX_ev_stars_for_home"
 		texturefile = "gfx/interface/icons/ascension_perks/ev_stars_for_home.dds"

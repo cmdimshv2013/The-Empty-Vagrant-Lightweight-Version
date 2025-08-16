@@ -1,16 +1,11 @@
 namespace = ev_resolution
-
 #??????
 country_event = {
 	id = ev_resolution.1
 	title = ev_resolution.1.title
 	desc = ev_resolution.1.desc
 	picture = GFX_evt_signing
-
 	is_triggered_only = yes
-	trigger = {
-		
-	}
 	option = {
 		name = OK
 		add_resource = {
@@ -42,7 +37,6 @@ country_event = {
 				every_owned_planet = {
 					limit = {
 						free_housing < 0
-	
 					}
 					add_district = district_hive
 				}
@@ -54,16 +48,13 @@ country_event = {
 				every_owned_planet = {
 					limit = {
 						free_housing < 0
-						
 					}
 					add_district = district_nexus
 				}
 			}
 		}
-		
 	}
 }
-
 
 #??????
 country_event = {
@@ -71,11 +62,7 @@ country_event = {
 	title = ev_resolution.1.title
 	desc = ev_resolution.1.desc
 	picture = GFX_evt_signing
-
 	is_triggered_only = yes
-	trigger = {
-		
-	}
 	option = {
 		name = OK
 		add_resource = {
@@ -85,8 +72,5 @@ country_event = {
 			modifier = ev_resolution_economic_aid_2
 			days = 3600
 		}
-		
 	}
 }
-
-

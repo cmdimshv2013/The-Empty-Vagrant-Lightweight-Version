@@ -1,0 +1,324 @@
+# TECHNOLOGY
+
+# This example probably does not show all features! So beware!
+
+# example_technology_3 = {
+# 	# Cost can also just be a fixed value like it currently is for most technologies
+# 	cost = {
+# 		factor = 1000
+# 		modifier = {
+# 			factor = 0.5
+# 			is_active_resolution = "some_galcom_resolution"
+# 		}
+# 	}
+
+# 	# society/engineering/physics
+# 	area = society 
+
+# 	# If technologies follow some progression path then they can specify a tier.
+# 	# The prerequisites must then be a similar technology of the previous tier.
+# 	tier = 3
+# 	prerequisites = { example_technology_2 }
+
+# 	category = { archaeostudies }
+
+# 	# Whether the technology should be considered and displayed as rare
+# 	is_rare = yes
+
+# 	# Unlocks some specific feature to the player. Being able to use gateways is a big one.
+# 	feature_flags = {
+# 		gateway_activation
+# 	}
+
+# 	# Base weight to use to draw the next technology of the specified area
+# 	weight = 100
+
+# 	# Multipliers for the weight above
+# 	weight_modifier = {
+# 		factor = 0.50
+# 		modifier = {
+# 			factor = 2
+# 			has_technology = some_other_technology
+# 		}
+# 	}
+#
+#	# Technology Swap: Use when you want a technology to show a different name
+#	# or have different modifiers in some circumstances. For example, corvette
+#	# ships technology become small brawlers technology for Empires that use
+#	# bioship
+#
+#	technology_swap = {
+#		name = tech_bioship_biter				# the alternative name for this tech (to show as a different tech)
+#		inherit_icon = yes 						# whether this swap uses the same icon as the original tech
+#		inherit_effects = no 					# whether this swap use the same modifier as the original tech
+#
+#		trigger = {								# the trigger that determines if we're using this swap instead of
+#			uses_ship_category = bio_ship 		# the original tech. Note that if there are more than swap possibles
+#
+#		}										# the game will use the first one that returns yes
+#		area = society 							# NEW: the area (physics/society/engineering) the swap uses instead of
+#												# the area of the original tech. if this is blank, the swap doesn't change
+#												# the area
+#		category = { biology } 					# NEW: the list of categories the swap uses instead of those of the
+#												# original tech. if this is blank, the swap doesn't change the categories
+#												# NOTE: the list here replaces ALL the categories from the tech, so if you
+#												# want to keep some, you'll have to add them here too.
+#	}
+# }
+
+tech_fgt1 = {
+    cost = 100000      # `@` 指引用数值
+    area = physics         # 社会学领域
+    tier = 1
+    category = { military_theory }  # 军事科技
+
+    weight = 10000          # 一般情况下100为比较常见的数值，但是这里为了能我们的议程效果被很容易的看见，所以写成了10000
+    prereqfor_desc = {      # 文本
+        ship = {
+            title = "fgt1tech"
+            desc = "fgt1tech_DESC"
+        }
+    }
+
+    potential = {
+		has_country_flag = fgt_st
+    }
+
+	is_rare = yes
+	is_dangerous = yes
+
+    weight_modifier = {
+        modifier = {        # 这里的默认范围是帝国，所以不需要表示范围的语句（例如from/owner等）
+            factor = 0      # factor为乘法，即当没有唯物主义或者极端唯物主义时，权重乘以0倍
+                NOR = {
+                has_country_flag = fgt_st
+            	}
+        }
+    }
+    modifier = {
+       
+    }
+    ai_weight = {
+        factor = 0
+    }
+}
+
+tech_rp_fgt1 = {
+	area = physics
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 1
+	category = { military_theory }
+	levels = -1
+	prerequisites = { "tech_fgt1" }
+	weight = 85
+
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+
+	is_rare = yes
+	is_dangerous = yes
+	#When a tech is added to the list of tech alternatives it will register each entry in weight_groups to a list. such as economy, or repeatable, or whatever
+	#Then all remaining potential techs will multiply their weight with the corresponding mod_weight_if_group_picked.
+	#So if the first tech picked has the weight group 'repeatable', all other techs with a mod_weight_if_group_picked 'repeatable = 0.4', for example, will multiply their weight with 0.4
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sg_damage_mult = 0.02
+        weapon_type_sg_fire_rate_mult = 0.02
+	}
+}
+
+tech_fgt2 = {
+    cost = 200000      # `@` 指引用数值
+    area = physics         # 社会学领域
+    tier = 1
+    category = { military_theory }  # 军事科技
+
+    weight = 10000          # 一般情况下100为比较常见的数值，但是这里为了能我们的议程效果被很容易的看见，所以写成了10000
+    prereqfor_desc = {      # 文本
+        ship = {
+            title = "fgt2tech"
+            desc = "fgt2tech_DESC"
+        }
+    }
+
+    potential = {
+		has_country_flag = fgt1_finished
+	}
+
+	is_rare = yes
+	is_dangerous = yes
+
+    weight_modifier = {
+        modifier = {        # 这里的默认范围是帝国，所以不需要表示范围的语句（例如from/owner等）
+            factor = 0      # factor为乘法，即当没有唯物主义或者极端唯物主义时，权重乘以0倍
+                NOR = {
+                has_country_flag = fgt1_finished
+            	}
+        }
+    }
+    modifier = {
+       
+    }
+    ai_weight = {
+        factor = 0
+    }
+}
+
+tech_rp_fgt2 = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 1
+	category = { military_theory }
+	levels = -1
+	prerequisites = { "tech_fgt2" }
+	weight = 85
+
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+
+	is_rare = yes
+	is_dangerous = yes
+	#When a tech is added to the list of tech alternatives it will register each entry in weight_groups to a list. such as economy, or repeatable, or whatever
+	#Then all remaining potential techs will multiply their weight with the corresponding mod_weight_if_group_picked.
+	#So if the first tech picked has the weight group 'repeatable', all other techs with a mod_weight_if_group_picked 'repeatable = 0.4', for example, will multiply their weight with 0.4
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sg_damage_mult = 0.02
+        weapon_type_sg_fire_rate_mult = 0.02
+	}
+}
+
+tech_fgt3 = {
+    cost = 300000      # `@` 指引用数值
+    area = physics         # 社会学领域
+    tier = 1
+    category = { military_theory }  # 军事科技
+
+    weight = 10000          # 一般情况下100为比较常见的数值，但是这里为了能我们的议程效果被很容易的看见，所以写成了10000
+    prereqfor_desc = {      # 文本
+        ship = {
+            title = "fgt3tech"
+            desc = "fgt3tech_DESC"
+        }
+    }
+
+    potential = {
+		has_country_flag = fgt2_finished
+	}
+
+	is_rare = yes
+	is_dangerous = yes
+
+    weight_modifier = {
+        modifier = {        # 这里的默认范围是帝国，所以不需要表示范围的语句（例如from/owner等）
+            factor = 0      # factor为乘法，即当没有唯物主义或者极端唯物主义时，权重乘以0倍
+                NOR = {
+                has_country_flag = fgt2_finished
+            	}
+        }
+    }
+    modifier = {
+       
+    }
+    ai_weight = {
+        factor = 0
+    }
+}
+
+tech_rp_fgt3 = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 1
+	category = { military_theory }
+	levels = -1
+	prerequisites = { "tech_fgt3" }
+	weight = 85
+
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+
+	is_rare = yes
+	is_dangerous = yes
+	#When a tech is added to the list of tech alternatives it will register each entry in weight_groups to a list. such as economy, or repeatable, or whatever
+	#Then all remaining potential techs will multiply their weight with the corresponding mod_weight_if_group_picked.
+	#So if the first tech picked has the weight group 'repeatable', all other techs with a mod_weight_if_group_picked 'repeatable = 0.4', for example, will multiply their weight with 0.4
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sg_damage_mult = 0.02
+        weapon_type_sg_fire_rate_mult = 0.02
+	}
+}
+
+tech_fgt4 = {
+    cost = 500000      # `@` 指引用数值
+    area = physics         # 社会学领域
+    tier = 1
+    category = { military_theory }  # 军事科技
+
+    weight = 10000          # 一般情况下100为比较常见的数值，但是这里为了能我们的议程效果被很容易的看见，所以写成了10000
+    prereqfor_desc = {      # 文本
+        ship = {
+            title = "fgt4tech"
+            desc = "fgt4tech_DESC"
+        }
+    }
+
+	is_rare = yes
+	is_dangerous = yes
+
+    potential = {
+		has_country_flag = fgt3_finished
+	}
+
+    weight_modifier = {
+        modifier = {        # 这里的默认范围是帝国，所以不需要表示范围的语句（例如from/owner等）
+            factor = 0      # factor为乘法，即当没有唯物主义或者极端唯物主义时，权重乘以0倍
+                NOR = {
+                has_country_flag = fgt3_finished
+            	}
+        }
+    }
+    modifier = {
+       
+    }
+    ai_weight = {
+        factor = 0
+    }
+}
+

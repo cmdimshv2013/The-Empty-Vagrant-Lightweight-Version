@@ -1,0 +1,827 @@
+namespace = crs_event
+
+country_event = {
+	id = crs_event.1
+	title = crs_event.1.name
+	desc = crs_event.1.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.1.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		destroy_situation = from
+		set_country_flag = fgt_st
+
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.2
+	title = crs_event.2.name
+	desc = crs_event.2.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.2.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		destroy_situation = from
+		set_country_flag = fgt1_finished
+		
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.3
+	title = crs_event.3.name
+	desc = crs_event.3.desc
+	diplomatic = yes
+	is_triggered_only = yes
+	diplomatic_title = "crs_event.3.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+
+
+	immediate = {
+		destroy_situation = from
+		set_country_flag = fgt2_finished
+	}
+	option = {
+		name = crs_event.3.a
+		hidden_effect = {
+			country_event = {
+				id = crs_event.31
+			}
+		}
+	}
+
+	option = {
+		name = crs_event.3.b
+		hidden_effect = {
+			country_event = {
+				id = crs_event.32
+			}
+		}
+	}
+
+	option = {
+		name = crs_event.3.c
+		default_hide_option = yes 
+	}
+
+}
+
+country_event = {
+	id = crs_event.31
+	title = crs_event.31.name
+	desc = crs_event.31.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.31.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_qn_room } #图片只能用room
+	is_triggered_only = yes
+
+
+
+	option = {
+		name = crs_event.31.b
+		hidden_effect = {
+			country_event = {
+				id = crs_event.3
+				default_hide_option = yes 
+			}
+		}
+	}
+		
+
+}
+country_event = {
+	id = crs_event.32
+	title = crs_event.32.name
+	desc = crs_event.32.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.32.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_gsew_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	option = {
+		name = crs_event.32.b
+		hidden_effect = {
+			country_event = {
+				id = crs_event.3
+				default_hide_option = yes 
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = crs_event.4
+	title = crs_event.4.name
+	desc = crs_event.4.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.4.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		destroy_situation = from
+		set_country_flag = fgt3_finished
+	}
+	option = {
+		name = crs_event.4.a
+		hidden_effect = {
+			country_event = {
+				id = crs_event.41		
+			}
+		}
+	}
+
+	option = {
+		name = crs_event.4.b
+		hidden_effect = {
+			country_event = {
+				id = crs_event.42
+			}
+		}
+	}
+
+	option = {
+		name = crs_event.3.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.41
+	title = crs_event.41.name
+	desc = crs_event.41.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.41.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_kg_room } #图片只能用room
+	is_triggered_only = yes
+
+
+
+	option = {
+		name = crs_event.31.b
+		hidden_effect = {
+			country_event = {
+				id = crs_event.4
+				default_hide_option = yes 
+			}
+		}
+	}
+		
+
+}
+country_event = {
+	id = crs_event.42
+	title = crs_event.42.name
+	desc = crs_event.42.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.42.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_nlyt_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	option = {
+		name = crs_event.32.b
+		hidden_effect = {
+			country_event = {
+				id = crs_event.4
+				default_hide_option = yes 		
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = crs_event.5
+	title = crs_event.5.name
+	desc = crs_event.5.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.5.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		destroy_situation = from
+		set_country_flag = fgt4_finished
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.101
+	title = crs_event.101.name
+	desc = crs_event.101.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.101.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_003_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.102
+	title = crs_event.102.name
+	desc = crs_event.102.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.102.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_003_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.103
+	title = crs_event.103.name
+	desc = crs_event.103.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.103.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_003_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.104
+	title = crs_event.104.name
+	desc = crs_event.104.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.104.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_003_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.105
+	title = crs_event.105.name
+	desc = crs_event.105.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.105.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		start_situation = { type = fgt_situation_1 target = root } 
+	
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.201
+	title = crs_event.201.name
+	desc = crs_event.201.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.201.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_000_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.202
+	title = crs_event.202.name
+	desc = crs_event.202.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.202.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_001_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}	
+}
+
+country_event = {
+	id = crs_event.203
+	title = crs_event.203.name
+	desc = crs_event.203.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.203.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_005_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.204
+	title = crs_event.204.name
+	desc = crs_event.204.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.204.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_004_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.205
+	title = crs_event.205.name
+	desc = crs_event.205.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.205.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		start_situation = { type = fgt_situation_2 target = root } 
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+
+}
+
+country_event = {
+	id = crs_event.301
+	title = crs_event.301.name
+	desc = crs_event.301.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.301.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_006_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}		
+}
+
+country_event = {
+	id = crs_event.302
+	title = crs_event.302.name
+	desc = crs_event.302.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.302.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	after = {
+		country_event = {
+		id = crs_event.3031
+		days = 2
+		}
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.303
+	title = crs_event.303.name
+	desc = crs_event.303.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.303.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_004_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	after = {
+		
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.3031
+	title = crs_event.3031.name
+	desc = crs_event.3031.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.3031.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_007_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.304
+	title = crs_event.304.name
+	desc = crs_event.304.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.304.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_001_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		after = {
+		country_event = {
+		id = crs_event.3041
+		days = 2
+		}
+	}
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.3041
+	title = crs_event.3041.name
+	desc = crs_event.3041.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.3041.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_000_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.305
+	title = crs_event.305.name
+	desc = crs_event.305.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.305.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		start_situation = { type = fgt_situation_3 target = root } 
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.401
+	title = crs_event.401.name
+	desc = crs_event.401.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.401.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_004_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.402
+	title = crs_event.402.name
+	desc = crs_event.402.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.402.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_005_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.403
+	title = crs_event.403.name
+	desc = crs_event.403.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.403.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_006_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	after = {
+		country_event = {
+		id = crs_event.4031
+		days = 2
+		}
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+country_event = {
+	id = crs_event.4041
+	title = crs_event.4041.name
+	desc = crs_event.4041.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.4041.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_003_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+country_event = {
+	id = crs_event.404
+	title = crs_event.404.name
+	desc = crs_event.404.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.404.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_007_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.405
+	title = crs_event.405.name
+	desc = crs_event.405.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.405.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		start_situation = { type = fgt_situation_4 target = root } 
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+
+country_event = {
+	id = crs_event.501
+	title = crs_event.501.name
+	desc = crs_event.501.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.501.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = emptaa_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.502
+	title = crs_event.502.name
+	desc = crs_event.502.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.502.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = emptaa_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.503
+	title = crs_event.503.name
+	desc = crs_event.503.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.503.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = emptaa_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.504
+	title = crs_event.504.name
+	desc = crs_event.504.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.504.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_007_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}
+
+country_event = {
+	id = crs_event.505
+	title = crs_event.505.name
+	desc = crs_event.505.desc
+	diplomatic = yes
+	diplomatic_title = "crs_event.505.name"
+	custom_gui = "ev_event_diplomacy_shipyard_settings_window" #窗口
+	custom_gui_option = "ev_event_diplomacy_shipyard_settings_option" #选项
+	picture_event_data = { room = evev_002_room } #图片只能用room
+	is_triggered_only = yes
+
+
+	immediate = {
+		start_situation = { type = fgt_situation_5 target = root } 
+	}
+	option = {
+		name = crs_event.9.c
+		default_hide_option = yes 
+	}
+}

@@ -30,7 +30,7 @@
  job_criminal_drug_desc:0 "这些贩毒团伙通过倒卖毒品获取惊人的利润。"
  mod_job_criminal_drug_add:0 "$job_criminal_ev$职业"
  mod_job_criminal_drug_per_crime:0 "每$VALUE$个行星犯罪有§G+1§!个$job_criminal_drug$职业"
- mod_job_criminal_drug_per_crime_short:0 "\n每$VALUE$个£crime §G+1§!个£mod_job_criminal_add£"
+ mod_job_criminal_drug_per_crime_short:0 "\n每$VALUE$个£crime£§G+1§!个£mod_job_criminal_add£"
  
  
  job_criminal_healthcare:0 "非法医师"

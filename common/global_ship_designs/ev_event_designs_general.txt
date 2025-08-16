@@ -1,4 +1,3 @@
-
 ship_design = {
 	name = "NAME_titan_ev_01"
 	ship_size = titan
@@ -6,7 +5,6 @@ ship_design = {
 	section = {
 		template = "TITAN_BOW"
 		slot = "bow"
-		
 		component = {
 			slot = "TITANIC_01"
 			template = "PERDITION_BEAM_TITAN"
@@ -36,11 +34,9 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 	}
-	
 	section = {
 		template = "TITAN_MID_EV"
 		slot = "mid"
-		
 		component = {
 			slot = "STRIKE_CRAFT_01"
 			template = "ion_cannon_strike"
@@ -57,7 +53,6 @@ ship_design = {
 			slot = "STRIKE_CRAFT_04"
 			template = "ion_cannon_strike"
 		}
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "KINETIC_ARTILLERY_2"
@@ -74,8 +69,6 @@ ship_design = {
 			slot = "LARGE_GUN_04"
 			template = "KINETIC_ARTILLERY_2"
 		}
-		
-		
 		component = {
 			slot = "LARGE_UTILITY_1"
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
@@ -125,11 +118,9 @@ ship_design = {
 			template = "LARGE_ARMOR_5"
 		}
 	}
-	
 	section = {
 		template = "TITAN_STERN"
 		slot = "stern"
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "KINETIC_ARTILLERY_2"
@@ -138,7 +129,6 @@ ship_design = {
 			slot = "LARGE_GUN_02"
 			template = "KINETIC_ARTILLERY_2"
 		}
-		
 		component = {
 			slot = "AUX_UTILITY_1"
 			template = "AUTO_REPAIR"
@@ -152,18 +142,13 @@ ship_design = {
 			template = "FIRE_CONTROL_1"
 		}
 	}
-	
-	required_component="TITAN_DARK_MATTER_REACTOR"
-	required_component="JUMP_DRIVE_1"	
-	required_component="TITAN_SHIP_THRUSTER_5"
-	required_component="SENSOR_4"
-	required_component="COMBAT_COMPUTER_EV_LINE"
-	required_component="SHIP_AURA_INSPIRING_PRESENCE"
+	required_component = "TITAN_DARK_MATTER_REACTOR"
+	required_component = "JUMP_DRIVE_1"
+	required_component = "TITAN_SHIP_THRUSTER_5"
+	required_component = "SENSOR_4"
+	required_component = "COMBAT_COMPUTER_EV_LINE"
+	required_component = "SHIP_AURA_INSPIRING_PRESENCE"
 }
-
-
-
-
 
 ship_design = {
 	name = "NAME_battleship_ev_01"
@@ -172,12 +157,10 @@ ship_design = {
 	section = {
 		template = "BATTLESHIP_BOW_M2S4"
 		slot = "bow"
-		
 		component = {
 			slot = "EXTRA_LARGE_01"
 			template = "ARC_EMITTER_2"
 		}
-		
 		component = {
 			slot = "LARGE_UTILITY_1"
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
@@ -190,10 +173,7 @@ ship_design = {
 			slot = "LARGE_UTILITY_3"
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
-		
-		
 	}
-	
 	section = {
 		template = "BATTLESHIP_MID_L2M2"
 		slot = "mid"
@@ -210,35 +190,30 @@ ship_design = {
 			template = "LARGE_ARMOR_5"
 		}
 	}
-	
 	section = {
 		template = "BATTLESHIP_STERN_L1"
 		slot = "stern"
 	}
-	
-	required_component="TITAN_DARK_MATTER_REACTOR"
-	required_component="JUMP_DRIVE_1"
-	required_component="SENSOR_4"
-	required_component="TITAN_SHIP_THRUSTER_5"
-	required_component="COMBAT_COMPUTER_EV_LINE"
-	required_component="SHIP_AURA_INSPIRING_PRESENCE"
+	required_component = "TITAN_DARK_MATTER_REACTOR"
+	required_component = "JUMP_DRIVE_1"
+	required_component = "SENSOR_4"
+	required_component = "TITAN_SHIP_THRUSTER_5"
+	required_component = "COMBAT_COMPUTER_EV_LINE"
+	required_component = "SHIP_AURA_INSPIRING_PRESENCE"
 }
-
 
 ship_design = {
 	name = "NAME_EV_Ancestral_Glory"
 	ship_size = marauder_galleon
 	is_event_design = yes
 	is_special_buildable = yes
-
 	section = {
 		template = "pirate_galleon_key"
 		slot = "mid"
-	
-		component = {
-			slot = "SMALL_GUN_01"
-			template = "AUTOCANNON_2"
-		}
+		#component = {
+		#	slot = "SMALL_GUN_01"
+		#	template = "AUTOCANNON_2"
+		#}
 		component = {
 			slot = "TORPEDO_01"
 			template = "MISSILE_4"
@@ -326,7 +301,7 @@ ship_design = {
 		component = {
 			slot = "LARGE_UTILITY_10"
 			template = "LARGE_SHIELD_5"
-		}	
+		}
 		component = {
 			slot = "AUX_UTILITY_1"
 			template = "AUTO_REPAIR"
@@ -339,7 +314,6 @@ ship_design = {
 	required_component = "TITAN_DARK_MATTER_REACTOR"
 }
 
-
 # Pirate Lair
 ship_design = {
 	name = "NAME_Pirate_Nest_2"
@@ -348,7 +322,6 @@ ship_design = {
 	section = {
 		template = "PIRATE_STATION_SECTION"
 		slot = "west"
-		
 		component = {
 			slot = "SMALL_GUN_01"
 			template = "SMALL_MASS_DRIVER_4"
@@ -376,4 +349,20 @@ ship_design = {
 	}
 	required_component = "SENSOR_3"
 	required_component = "BATTLESHIP_FISSION_REACTOR"
+}
+#信标
+
+
+ship_design = {
+	name = "NAME_EV_Beacon"
+	ship_size = ev_beacon
+	hide_size = yes
+	section = {
+		template = "ev_beacon_key_bow_event"
+		slot = "mid"
+		
+	}
+	required_component = "EV_BEACON_JUMP_DRIVE_1"
+	required_component = "SENSOR_1"
+	required_component = "SHIP_THRUSTER_1"
 }

@@ -1,197 +1,187 @@
-#°™°™°™°™°™°™°™°™º“‘∞…˙≤˙Ω¢°™°™°™°™°™°™°™°™°™°™°™°™
+#‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚ÄîÂÆ∂Âõ≠Áîü‰∫ßËà∞‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî
 ship_section_template = {
 	key = "homeless_small_1_key"
 	ship_size = homeless_ship
 	fits_on_slot = mid
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_1" }
-	
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_1"
+	}
+	component_slot = {
 		name = "PD_01"
-		template = point_defence_turret
-		slot_type = weapon
+		template = small_turret
 		locatorname = "large_gun_08"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_09"
+		locatorname = "large_gun_07"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_10"
+		locatorname = "large_gun_06"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_11"
+		locatorname = "large_gun_08"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_12"
+		locatorname = "large_gun_04"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_13"
+		locatorname = "large_gun_03"
 	}
 	small_utility_slots = 3
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 180
 		}
 	}
 }
+
 ship_section_template = {
 	key = "homeless_very_small_1_key_bow"
 	ship_size = homeless_ship
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_1" }
-
+	prerequisites = {
+		"tech_homeless_section_templates_1"
+	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_100"
+		locatorname = "large_gun_03"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_101"
+		locatorname = "large_gun_02"
 	}
 	small_utility_slots = 2
-#	aux_utility_slots = 1
+	#	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 130
 		}
 	}
-	
 }
-
-
 
 ship_section_template = {
 	key = "homeless_very_small_1_key_stern"
 	ship_size = homeless_ship
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_1" }
-
+	prerequisites = {
+		"tech_homeless_section_templates_1"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
-		locatorname = "large_gun_150"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		locatorname = "large_gun_08"
 	}
 	small_utility_slots = 3
-#	aux_utility_slots = 1
+	#	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 130
 		}
 	}
 }
-
 
 ship_section_template = {
 	key = "homeless_small_1_key_stern"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_2" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_2"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-
+		template =  medium_turret
 		rotation = 90
-		locatorname = "large_gun_150"
+		locatorname = "large_gun_08"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_01"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		template = medium_turret
+		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_02"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		locatorname = "large_gun_03"
 	}
 	small_utility_slots = 3
-#	aux_utility_slots = 1
+	#	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 130
 		}
 	}
 }
 
-
 ship_section_template = {
 	key = "homeless_small_1_key_stern_1"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_2" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_2"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_08"
 	}
-  component_slot = {
+	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		template = large_strike_craft
-
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_07"
 	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = medium_turret
+		locatorname = "large_gun_03"
+	}
 	small_utility_slots = 3
-#	aux_utility_slots = 1
+	#	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 230
 		}
@@ -202,72 +192,63 @@ ship_section_template = {
 	key = "homeless_small_2_key"
 	ship_size = homeless_ship
 	fits_on_slot = mid
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_2" }
-
-   component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_2"
+	}
+	component_slot = {
 		name = "PD_01"
-		template = point_defence_turret
-		slot_type = weapon
+		template = small_turret
 		locatorname = "large_gun_08"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_09"
+		locatorname = "large_gun_04"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_10"
+		locatorname = "large_gun_03"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_11"
+		locatorname = "large_gun_03"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_12"
+		locatorname = "large_gun_03"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_13"
+		locatorname = "large_gun_08"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_14"
+		locatorname = "large_gun_07"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_15"
+		locatorname = "large_gun_08"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_09"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_16"
+		locatorname = "large_gun_06"
 	}
-
 	small_utility_slots = 6
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
-	cost = {
-		alloys = 280
+		category = ship_components
+		cost = {
+			alloys = 280
 		}
 	}
 }
@@ -276,47 +257,52 @@ ship_section_template = {
 	key = "homeless_small_2_key_stern"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s" #entity = "cargo_transport_tanker_entity_ev"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_2" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_2"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-	
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_03"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_01"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
-	}
-  component_slot = {
-		name = "LARGE_GUN_02"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
-	}
-  component_slot = {
-		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_08"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = medium_turret
+		locatorname = "large_gun_08"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = small_turret
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		template = small_turret
+		locatorname = "large_gun_08"
 	}
-	
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = small_turret
+		locatorname = "large_gun_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = small_turret
+		locatorname = "large_gun_06"
+	}
 	small_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 200
 		}
@@ -327,43 +313,48 @@ ship_section_template = {
 	key = "homeless_small_2_key_stern_1"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_2" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_2"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		locatorname = "large_gun_08"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_08"
 	}
-  
-	
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = medium_turret
+		locatorname = "large_gun_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = medium_turret
+		locatorname = "large_gun_06"
+	}
 	small_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 400
 		}
@@ -374,48 +365,44 @@ ship_section_template = {
 	key = "homeless_small_2_key_stern_2"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_3" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_3"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
-		locatorname = "large_gun_05"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_01"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		template = medium_turret
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		template = medium_turret
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		template = medium_turret
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		template = medium_turret
+		locatorname = "large_gun_06"
 	}
 	small_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
-	cost = {
-		alloys = 250
+		category = ship_components
+		cost = {
+			alloys = 250
 		}
 	}
 }
@@ -424,53 +411,47 @@ ship_section_template = {
 	key = "homeless_medium_1_key"
 	ship_size = homeless_ship
 	fits_on_slot = mid
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_3" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_3"
+	}
+	component_slot = {
 		name = "PD_01"
-		template = point_defence_turret
-		slot_type = weapon
+		template = small_turret
 		locatorname = "large_gun_08"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_09"
+		locatorname = "large_gun_07"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_10"
+		locatorname = "large_gun_07"
 	}
-
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_11"
+		locatorname = "large_gun_06"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_12"
+		locatorname = "large_gun_02"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_13"
+		locatorname = "large_gun_03"
 	}
 	small_utility_slots = 2
 	medium_utility_slots = 1
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 600
 		}
@@ -482,40 +463,40 @@ ship_section_template = {
 	ship_size = homeless_ship
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_3" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_3"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_100"
+		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_101"
+		locatorname = "large_gun_02"
 	}
-
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_102"
+		locatorname = "large_gun_03"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_103"
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = medium_turret
+		locatorname = "large_gun_06"
 	}
 	small_utility_slots = 3
-
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 500
 		}
@@ -526,69 +507,61 @@ ship_section_template = {
 	key = "homeless_medium_2_key"
 	ship_size = homeless_ship
 	fits_on_slot = mid
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_4"
+	}
+	component_slot = {
 		name = "PD_01"
-		template = point_defence_turret
-		slot_type = weapon
+		template = small_turret
 		locatorname = "large_gun_08"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_09"
+		locatorname = "large_gun_07"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_10"
+		locatorname = "large_gun_07"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_11"
+		locatorname = "large_gun_06"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_12"
+		locatorname = "large_gun_02"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_13"
+		locatorname = "large_gun_03"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_07"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_14"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_08"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_15"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_09"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_16"
 	}
 	medium_utility_slots = 6
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 1250
 		}
@@ -602,27 +575,26 @@ ship_section_template = {
 	key = "homeless_medium_2_key_bow"
 	ship_size = homeless_ship
 	fits_on_slot = bow
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
-
-    component_slot = {
-			name = "LARGE_GUN_01"
-		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_100"
+	prerequisites = {
+		"tech_homeless_section_templates_4"
 	}
-    component_slot = {
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_101"
+		locatorname = "large_gun_02"
 	}
 	medium_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 750
 		}
@@ -636,38 +608,42 @@ ship_section_template = {
 	key = "homeless_medium_2_key_bow_2"
 	ship_size = homeless_ship
 	fits_on_slot = bow
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
+	prerequisites = {
+		"tech_homeless_section_templates_4"
+	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_100"
+		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_101"
+		locatorname = "large_gun_02"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_102"
+		locatorname = "large_gun_03"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_103"
+		locatorname = "large_gun_04"
 	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = large_turret
+		locatorname = "large_gun_16"
+	}
+
 	medium_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 850
 		}
@@ -681,46 +657,47 @@ ship_section_template = {
 	key = "homeless_medium_2_key_stern"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_4"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		locatorname = "large_gun_06"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_08"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = large_turret
+		locatorname = "large_gun_16"
 	}
 	medium_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 850
 		}
@@ -734,47 +711,43 @@ ship_section_template = {
 	key = "homeless_medium_2_key_stern_1"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_4"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_03"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_03"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
-		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		template = large_turret
+		locatorname = "large_gun_06"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		template = large_turret
+		locatorname = "large_gun_08"
 	}
 	medium_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 1350
 		}
@@ -788,52 +761,47 @@ ship_section_template = {
 	key = "homeless_large_1_key"
 	ship_size = homeless_ship
 	fits_on_slot = mid
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_5" }
-
-   component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_5"
+	}
+	component_slot = {
 		name = "PD_01"
-		template = point_defence_turret
-		slot_type = weapon
-		locatorname = "large_gun_11"
+		template = small_turret
+		locatorname = "large_gun_06"
 	}
-   component_slot = {
+	component_slot = {
 		name = "PD_02"
-		template = point_defence_turret
-		slot_type = weapon
-		locatorname = "large_gun_10"
+		template = small_turret
+		locatorname = "large_gun_07"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_08"
 	}
-     component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_09"
+		locatorname = "large_gun_07"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_12"
+		locatorname = "large_gun_02"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_13"
+		locatorname = "large_gun_03"
 	}
 	medium_utility_slots = 3
 	large_utility_slots = 2
 	aux_utility_slots = 2
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 1750
 		}
@@ -847,70 +815,72 @@ ship_section_template = {
 	key = "homeless_large_1_key_bow"
 	ship_size = homeless_ship
 	fits_on_slot = bow
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_5" }
-
-    component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_5"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_100"
+		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_101"
+		locatorname = "large_gun_02"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_102"
+		locatorname = "large_gun_03"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_103"
+		locatorname = "large_gun_04"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_104"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_105"
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_106"
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_104"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_105"
+		locatorname = "large_gun_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = medium_turret
+		locatorname = "large_gun_11"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = medium_turret
+		locatorname = "large_gun_12"
 	}
 	medium_utility_slots = 3
 	large_utility_slots = 2
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 2000
 		}
@@ -924,84 +894,75 @@ ship_section_template = {
 	key = "homeless_large_1_key_stern"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_5" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_5"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_07"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		template = medium_turret
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		template = medium_turret
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		locatorname = "large_gun_06"
 	}
+	
 	medium_utility_slots = 4
 	large_utility_slots = 1
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 1800
 		}
@@ -1015,67 +976,60 @@ ship_section_template = {
 	key = "homeless_large_1_key_stern_1"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_5" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_5"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_07"
 	}
-  component_slot = {
+	component_slot = {
 		name = "STRIKE_CRAFT_03"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
-		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		template = large_turret
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_10"
-		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		template = large_turret
+		locatorname = "large_gun_06"
 	}
 	medium_utility_slots = 4
 	large_utility_slots = 1
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 2750
 		}
@@ -1089,88 +1043,77 @@ ship_section_template = {
 	key = "homeless_large_2_key"
 	ship_size = homeless_ship
 	fits_on_slot = mid
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_6" }
-
-   component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
+	component_slot = {
 		name = "PD_01"
-		template = point_defence_turret
-		slot_type = weapon
+		template = small_turret
 		locatorname = "large_gun_08"
 	}
-   component_slot = {
+	component_slot = {
 		name = "PD_02"
-		template = point_defence_turret
-		slot_type = weapon
-		locatorname = "large_gun_09"
+		template = small_turret
+		locatorname = "large_gun_07"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_10"
-	} 
-    component_slot = {
+		locatorname = "large_gun_07"
+	}
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_11"
+		locatorname = "large_gun_06"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_12"
+		locatorname = "large_gun_02"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = large_turret
-		slot_type = weapon
-		locatorname = "large_gun_13"
+		locatorname = "large_gun_03"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_07"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_14"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_08"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_15"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_09"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_16"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_10"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_17"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_11"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_18"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_12"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_07"
 	}
 	medium_utility_slots = 2
 	large_utility_slots = 4
 	aux_utility_slots = 3
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 2600
 		}
@@ -1184,92 +1127,79 @@ ship_section_template = {
 	key = "homeless_large_2_key_stern"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_6" }
-	
-	
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		template = large_turret
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		template = large_turret
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		template = large_turret
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		template = large_turret
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		template = large_turret
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_10"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_11"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_02"
 	}
-	
 	medium_utility_slots = 3
 	large_utility_slots = 2
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 3800
 		}
@@ -1283,76 +1213,66 @@ ship_section_template = {
 	key = "homeless_large_2_key_stern_1"
 	ship_size = homeless_ship
 	fits_on_slot = stern
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_6" }
-	
-	
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
-		locatorname = "large_gun_05"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
-		locatorname = "large_gun_05"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_03"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
-		locatorname = "large_gun_05"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_04"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
-		locatorname = "large_gun_05"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_150"
+		template = large_turret
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_151"
+		template = large_turret
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_152"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "large_gun_153"
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_154"
 	}
-	
 	medium_utility_slots = 3
 	large_utility_slots = 2
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 4300
 		}
@@ -1366,88 +1286,76 @@ ship_section_template = {
 	key = "homeless_large_2_key_bow"
 	ship_size = homeless_ship
 	fits_on_slot = bow
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_6" }
-
-   component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
+	component_slot = {
 		name = "PD_01"
-		template = point_defence_turret
-		slot_type = weapon
-		locatorname = "large_gun_100"
+		template = small_turret
+		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_101"
+		template = large_turret
+		locatorname = "large_gun_02"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_103"
+		template = large_turret
+		locatorname = "large_gun_04"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_102"
+		template = large_turret
+		locatorname = "large_gun_03"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_102"
+		template = large_turret
+		locatorname = "large_gun_03"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_103"
+		template = large_turret
+		locatorname = "large_gun_04"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
-		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_104"
+		template = large_turret
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_104"
+		locatorname = "large_gun_08"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_105"
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_10"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_105"
+		locatorname = "large_gun_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_11"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_106"
+		locatorname = "large_gun_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_12"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "large_gun_106"
+		locatorname = "large_gun_07"
 	}
-	medium_utility_slots = 3
-	large_utility_slots = 2
+	large_utility_slots = 5
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			alloys = 2800
 		}
@@ -1457,172 +1365,265 @@ ship_section_template = {
 	}
 }
 
-	
-	
-	
-	
-#°™°™°™°™°™°™°™°™ÀΩ»Àº“‘∞…˙≤˙Ω¢°™°™°™°™°™°™°™°™°™°™°™°™
+
+ship_section_template = {
+	key = "homeless_large_3_key_bow"
+	ship_size = homeless_ship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	icon = "GFX_megastructure_construction_background"
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	medium_utility_slots = 3
+	large_utility_slots = 2
+	aux_utility_slots = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 2800
+		}
+		upkeep = {
+			influence = 0.1
+		}
+	}
+}
+
+
+ship_section_template = {
+	key = "homeless_large_4_key_bow"
+	ship_size = homeless_ship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	icon = "GFX_megastructure_construction_background"
+	prerequisites = {
+		"tech_homeless_section_templates_7"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = extra_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	#medium_utility_slots = 3
+	large_utility_slots = 5
+	aux_utility_slots = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 3600
+		}
+		upkeep = {
+			influence = 0.1
+		}
+	}
+}
+
+
+##############################################################
+#‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚ÄîÁßÅ‰∫∫ÂÆ∂Âõ≠Áîü‰∫ßËà∞‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî
 ship_section_template = {
 	key = "private_homeless_small_1_key"
 	ship_size = private_homeless_ship
 	fits_on_slot = mid
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_1" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_1"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	small_utility_slots = 3
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 180
 		}
 	}
 }
+
 ship_section_template = {
 	key = "private_homeless_very_small_1_key_bow"
 	ship_size = private_homeless_ship
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_1" }
-
+	prerequisites = {
+		"tech_homeless_section_templates_1"
+	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = small_turret
+		locatorname = "large_gun_11"
+	}
 	small_utility_slots = 2
-#	aux_utility_slots = 1
+	#	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 130
 		}
 	}
-	
 }
-
-
 
 ship_section_template = {
 	key = "private_homeless_very_small_1_key_stern"
 	ship_size = private_homeless_ship
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_1" }
-  
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_1"
+	}
+	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	small_utility_slots = 3
-#	aux_utility_slots = 1
+	#	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 130
 		}
 	}
 }
 
-
-
-
 ship_section_template = {
 	key = "private_homeless_small_1_key_stern"
 	ship_size = private_homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_2" }
-  
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_2"
+	}
+	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	small_utility_slots = 3
-#	aux_utility_slots = 1
+	#	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 130
 		}
@@ -1633,72 +1634,63 @@ ship_section_template = {
 	key = "private_homeless_small_2_key"
 	ship_size = private_homeless_ship
 	fits_on_slot = mid
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_2" }
-
+	prerequisites = {
+		"tech_homeless_section_templates_2"
+	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_09"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-
 	small_utility_slots = 6
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
-	cost = {
-		energy = 280
+		category = ship_components
+		cost = {
+			energy = 280
 		}
 	}
 }
@@ -1707,47 +1699,47 @@ ship_section_template = {
 	key = "private_homeless_small_2_key_stern"
 	ship_size = private_homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_2" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_2"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-	
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = small_turret
+		locatorname = "large_gun_05"
+	}
 	small_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 200
 		}
@@ -1758,48 +1750,54 @@ ship_section_template = {
 	key = "private_homeless_small_2_key_stern_2"
 	ship_size = private_homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_3" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_3"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = small_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = small_turret
+		locatorname = "large_gun_03"
 	}
 	small_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
-	cost = {
-		energy = 250
+		category = ship_components
+		cost = {
+			energy = 250
 		}
 	}
 }
@@ -1808,53 +1806,47 @@ ship_section_template = {
 	key = "private_homeless_medium_1_key"
 	ship_size = private_homeless_ship
 	fits_on_slot = mid
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_3" }
-
- 	component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_3"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	small_utility_slots = 2
 	medium_utility_slots = 1
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 600
 		}
@@ -1866,40 +1858,35 @@ ship_section_template = {
 	ship_size = private_homeless_ship
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_3" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_3"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	small_utility_slots = 3
-
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 500
 		}
@@ -1910,74 +1897,65 @@ ship_section_template = {
 	key = "private_homeless_medium_2_key"
 	ship_size = private_homeless_ship
 	fits_on_slot = mid
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
-
- 	component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_4"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_07"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_08"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_09"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 6
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 1250
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -1986,32 +1964,30 @@ ship_section_template = {
 	key = "private_homeless_medium_2_key_bow"
 	ship_size = private_homeless_ship
 	fits_on_slot = bow
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
-
-    component_slot = {
-			name = "LARGE_GUN_01"
+	prerequisites = {
+		"tech_homeless_section_templates_4"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 750
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -2020,43 +1996,40 @@ ship_section_template = {
 	key = "private_homeless_medium_2_key_bow_2"
 	ship_size = private_homeless_ship
 	fits_on_slot = bow
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
+	prerequisites = {
+		"tech_homeless_section_templates_4"
+	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 850
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -2065,51 +2038,46 @@ ship_section_template = {
 	key = "private_homeless_medium_2_key_stern"
 	ship_size = private_homeless_ship
 	fits_on_slot = stern
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_4" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_4"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 4
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 850
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -2118,57 +2086,51 @@ ship_section_template = {
 	key = "private_homeless_large_1_key"
 	ship_size = private_homeless_ship
 	fits_on_slot = mid
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_5" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_5"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-     component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 3
 	large_utility_slots = 2
 	aux_utility_slots = 2
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 1750
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -2177,75 +2139,66 @@ ship_section_template = {
 	key = "private_homeless_large_1_key_bow"
 	ship_size = private_homeless_ship
 	fits_on_slot = bow
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_5" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_5"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 3
 	large_utility_slots = 2
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 2000
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -2254,82 +2207,72 @@ ship_section_template = {
 	key = "private_homeless_large_1_key_stern"
 	ship_size = private_homeless_ship
 	fits_on_slot = stern
-    should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_5" }
-
+	prerequisites = {
+		"tech_homeless_section_templates_5"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template =  medium_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
-  component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_01"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
 		template = medium_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 4
 	large_utility_slots = 1
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 1800
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -2338,93 +2281,81 @@ ship_section_template = {
 	key = "private_homeless_large_2_key"
 	ship_size = private_homeless_ship
 	fits_on_slot = mid
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_6" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-	 component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-   component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_03"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
-	} 
-    component_slot = {
+	}
+	component_slot = {
 		name = "LARGE_GUN_04"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_05"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_06"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_07"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_08"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_09"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_10"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_11"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-    component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_12"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 2
 	large_utility_slots = 4
 	aux_utility_slots = 3
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 2600
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -2433,94 +2364,82 @@ ship_section_template = {
 	key = "private_homeless_large_2_key_stern"
 	ship_size = private_homeless_ship
 	fits_on_slot = stern
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_6" }
-	
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		template = large_strike_craft
-		 
+		template = extra_large_turret
 		rotation = 90
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
-		template = medium_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
-		template = medium_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
-		template = medium_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_10"
-		template = medium_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_11"
-		template = medium_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_12"
-		template = medium_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	medium_utility_slots = 3
 	large_utility_slots = 2
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 3800
 		}
 		upkeep = {
-			
 		}
 	}
 }
@@ -2529,93 +2448,181 @@ ship_section_template = {
 	key = "private_homeless_large_2_key_bow"
 	ship_size = private_homeless_ship
 	fits_on_slot = bow
-  should_draw_components = yes
-	entity = homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
 	icon = "GFX_megastructure_construction_background"
-	prerequisites = { "tech_homeless_section_templates_6" }
-
-  component_slot = {
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
+	component_slot = {
 		name = "LARGE_GUN_01"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-	 component_slot = {
+	component_slot = {
 		name = "LARGE_GUN_02"
 		template = large_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
-		template = small_turret
-		slot_type = weapon
+		template = large_turret
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_09"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_10"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_11"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_12"
 		template = small_turret
-		slot_type = weapon
 		locatorname = "large_gun_01"
 	}
-	medium_utility_slots = 3
-	large_utility_slots = 2
+	large_utility_slots = 5
 	aux_utility_slots = 1
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
 			energy = 2800
 		}
 		upkeep = {
-			
+		}
+	}
+}
+
+ship_section_template = {
+	key = "private_homeless_large_3_key_bow"
+	ship_size = private_homeless_ship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	icon = "GFX_megastructure_construction_background"
+	prerequisites = {
+		"tech_homeless_section_templates_6"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	#medium_utility_slots = 3
+	large_utility_slots = 5
+	aux_utility_slots = 1
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 2800
+		}
+		upkeep = {
+		}
+	}
+}
+
+ship_section_template = {
+	key = "private_homeless_large_4_key_bow"
+	ship_size = private_homeless_ship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = HOEMLAND_SHIP_SECTION_entity	#homeless_ship_entity #entity = "caravaneer_cargoship_01_section_entity_s"
+	icon = "GFX_megastructure_construction_background"
+	prerequisites = {
+		"tech_homeless_section_templates_7"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = extra_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = large_turret
+		locatorname = "large_gun_01"
+	}
+	#medium_utility_slots = 3
+	large_utility_slots = 5
+	aux_utility_slots = 1
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 3600
+		}
+		upkeep = {
 		}
 	}
 }

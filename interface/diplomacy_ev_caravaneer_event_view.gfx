@@ -1,0 +1,18 @@
+spriteTypes = {
+	# spriteType = {
+	# 	name = "GFX_diplomacy_portrait_frame_ev"
+	# 	texturefile = "gfx/interface/icons/diplomacy/diplomacy_portrait_frame_ev.dds"
+	# }
+	# corneredTileSpriteType = {
+	# 	name = "GFX_tile_large_bg_ev"
+	# 	textureFile = "gfx/interface/icons/diplomacy/tile_large_bg_ev.dds"
+	# 	borderSize = { x=330 y=296 }
+	# 	effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	# }	
+	#spriteType = {
+	#	name = "GFX_tile_large_bg_ev"
+	#	textureFile = "gfx/interface/icons/diplomacy/tile_large_bg_ev.dds"
+	#	#borderSize = { x=330 y=296 }
+	#	#effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	#}	
+}

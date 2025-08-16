@@ -1,0 +1,35 @@
+ship_section_template = {
+	key = "SG_GSRW_core"
+	ship_size = SG_GSRW
+	fits_on_slot = mid
+	entity = "YBB_101_main_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = { name = "t_weapon_01" template = "11invisible_t_turret" locatorname = "Weapon_Bone01" }
+	component_slot = { name = "t_weapon_02" template = "11invisible_t_turret" locatorname = "Weapon_Bone02" }
+	#导弹槽位
+	
+
+	component_slot = { name = "l_weapon_01" template = "11invisible_large_turret" locatorname = "Weapon_Bone03" }
+	component_slot = { name = "l_weapon_02" template = "11invisible_large_turret" locatorname = "Weapon_Bone04" }
+	component_slot = { name = "l_weapon_03" template = "11invisible_large_turret" locatorname = "Weapon_Bone05" }
+	component_slot = { name = "l_weapon_04" template = "11invisible_large_turret" locatorname = "Weapon_Bone06" }
+	component_slot = { name = "l_weapon_05" template = "11invisible_large_turret" locatorname = "Weapon_Bone07" }
+	component_slot = { name = "l_weapon_06" template = "11invisible_large_turret" locatorname = "Weapon_Bone08" }
+	component_slot = { name = "l_weapon_07" template = "11invisible_large_turret" locatorname = "Weapon_Bone09" }
+	component_slot = { name = "l_weapon_08" template = "11invisible_large_turret" locatorname = "Weapon_Bone10" }
+	component_slot = { name = "l_weapon_09" template = "11invisible_large_turret" locatorname = "Weapon_Bone11" }
+	component_slot = { name = "l_weapon_10" template = "11invisible_large_turret" locatorname = "Weapon_Bone12" }
+	component_slot = { name = "l_weapon_11" template = "11invisible_large_turret" locatorname = "Weapon_Bone13" }
+	component_slot = { name = "l_weapon_12" template = "11invisible_large_turret" locatorname = "Weapon_Bone14" }
+	component_slot = { name = "l_weapon_13" template = "11invisible_large_turret" locatorname = "Weapon_Bone15" }
+	component_slot = { name = "l_weapon_14" template = "11invisible_large_turret" locatorname = "Weapon_Bone16" }
+	component_slot = { name = "l_weapon_15" template = "11invisible_large_turret" locatorname = "Weapon_Bone17" }
+	component_slot = { name = "l_weapon_16" template = "11invisible_large_turret" locatorname = "Weapon_Bone18" }
+	component_slot = { name = "l_weapon_17" template = "11invisible_large_turret" locatorname = "Weapon_Bone19" }
+	component_slot = { name = "l_weapon_18" template = "11invisible_large_turret" locatorname = "Weapon_Bone20" }
+	
+
+	
+	aux_utility_slots = 4
+}

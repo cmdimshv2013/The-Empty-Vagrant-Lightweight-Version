@@ -2,7 +2,6 @@
 #maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
 #morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
 #building spawned armies can't be built normally, but only created from pops working buildings
-
 # ÓÎÄÁÂ½¾ü
 ev_assault_army = {
 	damage = 0.75
@@ -13,8 +12,7 @@ ev_assault_army = {
 	war_exhaustion = 0.4
 	has_species = no
 	time = 30
-	icon_frame = 3
-	
+	icon = GFX_army_type_rebel
 	resources = {
 		category = armies
 		cost = {
@@ -30,16 +28,14 @@ ev_assault_army = {
 			}
 			energy = 70
 		}
-
 		upkeep = {
 			energy = 0.3
 		}
 	}
-	
 	potential = {
 		owner = {
-			OR = {		
-				is_country_type = default_ev
+			OR = {
+				is_default_ev_country_type = yes
 			}
 		}
 	}
@@ -55,43 +51,94 @@ ev_da_khan_assault_army = {
 	war_exhaustion = 1
 	has_species = no
 	time = 100
-	icon_frame = 3
-	
+	icon = GFX_army_type_rebel
 	resources = {
 		category = armies
 		cost = {
 			energy = 300
 		}
-
 		upkeep = {
 			energy = 1
 		}
 	}
-	
 	potential = {
 		owner = {
-			OR = {		
+			OR = {
 				has_country_flag = is_khanate_country_ev
 			}
 		}
-		
 	}
 }
 
-
 leviathans_crisis_army = {
-	damage = 3.0
-	morale_damage = 4.0
-	health = 4.0
+	damage = 5
+	morale_damage = 2
+	health = 5
 	has_morale = no
 	time = 180
-	icon_frame = 8
+	icon = GFX_army_type_rebel
 	has_species = no
-	
 	potential = {
 		exists = owner
 		owner = {
 			is_country_type = "ev_leviathans_crisis"
+		}
+	}
+}
+
+#±©Í½
+ev_event_ruffians = {
+	defensive = yes
+	damage = 0.1
+	morale = 2.5
+	morale_damage = 1
+	health = 10
+	has_morale = yes
+	collateral_damage = 10
+	war_exhaustion = 0
+	time = 1200
+	icon = GFX_army_type_rebel
+	resources = {
+		category = armies
+		cost = {
+			minerals = 150
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	#prerequisites = { "tech_telepathy" }
+	potential = {
+		always = no
+	}
+}
+#Ðé¿ÕÊ¥½Ì¾ü
+ev_void_army = {
+	damage = 4.5
+	health = 6
+	has_morale = no
+	morale_damage = 3.5
+	collateral_damage = 0.5
+	war_exhaustion = 0.2
+	has_species = no
+	time = 300
+	icon = GFX_army_type_ev_void_army
+	resources = {
+		category = armies
+		cost = {
+			minerals = 500
+		}
+		
+		upkeep = {
+			energy = 0.5
+		}
+	}
+	prerequisites = {
+		tech_ev_void_amry
+	}
+	potential = {
+		owner = {
+			has_country_flag = ev_void_tr_t6
 		}
 	}
 }

@@ -1,28 +1,26 @@
-#¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªÃÔÄã¼ÒÔ°Éú²ú½¢¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+#â€”â€”â€”â€”â€”â€”â€”â€”è¿·ä½ å®¶å›­ç”Ÿäº§èˆ°â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 ship_section_template = {
 	key = "homeless_mini_1_mid_key"
 	ship_size = mini_homeless_ship
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = homeless_small_ship_entity
+	entity = HOMELESS_SHIP_SECTION_entity
 	icon = "GFX_ship_part_core_mid"
-	prerequisites = { "tech_homeless_section_templates_1" }
-
+	prerequisites = {
+		"tech_homeless_section_templates_1"
+	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = small_turret
-		slot_type = weapon
-		locatorname = "L06"
+		locatorname = "small_gun_01"
 	}
-	
 	small_utility_slots = 1
 	aux_utility_slots = 0
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
-			alloys = 30
+			alloys = 50
 		}
-		
 	}
 }
 
@@ -31,25 +29,77 @@ ship_section_template = {
 	ship_size = mini_homeless_ship
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = homeless_small_ship_entity
+	entity = HOMELESS_SHIP_SECTION_entity
 	icon = "GFX_ship_part_core_mid"
-	prerequisites = { "tech_homeless_section_templates_3" }
-
+	prerequisites = {
+		"tech_homeless_section_templates_3"
+	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = medium_turret
-		slot_type = weapon
-		locatorname = "L06"
+		locatorname = "small_gun_04"
 	}
-	
 	small_utility_slots = 2
 	aux_utility_slots = 0
 	resources = {
-	category = ship_components
+		category = ship_components
 		cost = {
-			alloys = 30
+			alloys = 100
 		}
-		
 	}
 }
 
+ship_section_template = {
+	key = "homeless_mini_3_mid_key"
+	ship_size = mini_homeless_ship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = HOMELESS_SHIP_SECTION_entity
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = {
+		"tech_homeless_section_templates_5"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = medium_turret
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = medium_turret
+		locatorname = "medium_gun_04"
+	}
+	small_utility_slots = 2
+	aux_utility_slots = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+		}
+	}
+}
+
+ship_section_template = {
+	key = "homeless_mini_4_mid_key"
+	ship_size = mini_homeless_ship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = HOMELESS_SHIP_SECTION_entity
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = {
+		"tech_homeless_section_templates_7"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = large_turret
+		locatorname = "medium_gun_01"
+	}
+	small_utility_slots = 3
+	aux_utility_slots = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 450
+		}
+	}
+}

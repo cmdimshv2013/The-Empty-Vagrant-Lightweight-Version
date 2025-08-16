@@ -3,14 +3,12 @@
 # Portraits here are one you can choose from in the character creater. For prescripted races they are grabbed straight from the .gfx file. 
 # can specify playable=no to disable people from picking specified class.
 # can specify randomized=no to filter specified class from randomization.
-
 EMPTY_VAGRANT = {
 	randomized = no
 	#playable = no
 	portraits = {
 		#"ev_leviathans"
 	}
-	
 	graphical_culture = empty_vagrant_01
 	#graphical_culture = fungoid_01
 	move_pop_sound_effect = "moving_pop_confirmation"
@@ -18,16 +16,14 @@ EMPTY_VAGRANT = {
 
 LEVIATHANS_CRISIS = {
 	archetype = OTHER
-
-	playable = { always = no }
+	playable = {
+		always = no
+	}
 	randomized = no
-
 	gender = no
-
 	portraits = {
 		"ev_leviathans"
 	}
-	
 	graphical_culture = swarm_01
 	#graphical_culture = fungoid_01
 	#graphical_culture = lithoid_01

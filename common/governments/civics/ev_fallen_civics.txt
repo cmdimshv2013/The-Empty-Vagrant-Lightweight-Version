@@ -14,31 +14,46 @@
 #		traits = { trait = ... }					# default: empty; trait set to enforce on the secondary species. They cannot be removed, but more can be added if points/picks permit
 #	}
 #}
-
 ### Non-Player Civics
-#Ã´–È∂È¬‰
+#Â§™ËôöÂ†ïËêΩ
 civic_ev_lethargic_leadership = {
 	modification = no
-	icon = "gfx/interface/icons/governments/civics/civic_agrarian_idyll.dds"
+	icon = "gfx/interface/icons/governments/civics/civic_lethargic_leadership.dds"
 	potential = {
-		country_type = { value = fallen_empire_ev }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		country_type = {
+			value = fallen_empire_ev
+		}
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
 	}
-	random_weight = { base = 5 }
+	random_weight = {
+		base = 5
+	}
 	description = FALLEN_EMPIRE_LETHARGY_1
-	modifier = { 
+	modifier = {
 		country_base_influence_produces_add = -1
 	}
 }
 
 civic_ev_empire_in_decline = {
 	modification = no
-	icon = "gfx/interface/icons/governments/civics/civic_agrarian_idyll.dds"
+	icon = "gfx/interface/icons/governments/civics/civic_empire_in_decline.dds"
 	potential = {
-		country_type = { value = fallen_empire_ev }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		country_type = {
+			value = fallen_empire_ev
+		}
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
 	}
-	random_weight = { base = 5 }
+	random_weight = {
+		base = 5
+	}
 	description = FALLEN_EMPIRE_LETHARGY_2
 	modifier = {
 	}
@@ -49,11 +64,22 @@ civic_ev_revanchist_fervor = {
 	modification = no
 	icon = "gfx/interface/icons/governments/civics/civic_agrarian_idyll.dds"
 	potential = {
-		country_type = { OR = { value = awakened_fallen_empire value = awakened_fallen_empire_ev } }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		country_type = {
+			OR = {
+				value = awakened_fallen_empire
+				value = awakened_fallen_empire_ev
+			}
+		}
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
 	}
-	random_weight = { base = 5 }
-	modifier = { 
+	random_weight = {
+		base = 5
+	}
+	modifier = {
 		country_base_influence_produces_add = 1
 	}
 }
@@ -62,12 +88,23 @@ civic_ev_ancient_caches_of_technology = {
 	modification = no
 	icon = "gfx/interface/icons/governments/civics/civic_agrarian_idyll.dds"
 	potential = {
-		country_type = { OR = { value = awakened_fallen_empire value = awakened_fallen_empire_ev } }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		country_type = {
+			OR = {
+				value = awakened_fallen_empire
+				value = awakened_fallen_empire_ev
+			}
+		}
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
 	}
-	random_weight = { base = 5 }
-	modifier = { 
-		planet_jobs_produces_mult = 0.5	
+	random_weight = {
+		base = 5
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.5
 		ship_homeless_ev_produces_mult = 0.5
 	}
 }

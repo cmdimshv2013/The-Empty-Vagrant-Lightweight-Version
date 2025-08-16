@@ -24,6 +24,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/ev_lab_6.dds"
 	}
 }
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ev_homeless_unity_1"
+		texturefile = "gfx/interface/icons/ship_parts/homeless_unity_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ev_homeless_unity_2"
+		texturefile = "gfx/interface/icons/ship_parts/homeless_unity_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ev_homeless_unity_3"
+		texturefile = "gfx/interface/icons/ship_parts/homeless_unity_3.dds"
+	}
+}
+
+
 
 
 
@@ -203,13 +219,25 @@ spriteTypes = {
 	}
 }
 spriteTypes = {
-	spriteType = {
-		name = "GFX_ev_homeless_dark_matter"
-		texturefile = "gfx/interface/icons/ship_parts/homeless_dark_matter.dds"
-	}
+	#spriteType = {
+	#	name = "GFX_ev_homeless_dark_matter"
+	#	texturefile = "gfx/interface/icons/ship_parts/homeless_dark_matter.dds"
+	#}
 	spriteType = {
 		name = "GFX_ev_homeless_dark_matter_1"
 		texturefile = "gfx/interface/icons/ship_parts/homeless_dark_matter_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ev_homeless_sr_zro_1"
+		texturefile = "gfx/interface/icons/ship_parts/homeless_sr_zro_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ev_homeless_nanites_1"
+		texturefile = "gfx/interface/icons/ship_parts/homeless_nanites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ev_homeless_sr_living_metal_1"
+		texturefile = "gfx/interface/icons/ship_parts/homeless_sr_living_metal_1.dds"
 	}
 }
 
@@ -218,7 +246,7 @@ spriteTypes = {
 #PD modifier
 #####
 spriteTypes = {
-	#消费品
+	#
 	spriteType = {
 		name = "GFX_ark_produce_consumer_goods_modifier_1"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_consumer_goods_modifier_1.dds"
@@ -235,7 +263,7 @@ spriteTypes = {
 		name = "GFX_ark_produce_consumer_goods_modifier_4"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_consumer_goods_modifier_4.dds"
 	}
-	#食物
+	#
 	spriteType = {
 		name = "GFX_ark_produce_food_modifier_1"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_food_modifier_1.dds"
@@ -252,7 +280,7 @@ spriteTypes = {
 		name = "GFX_ark_produce_food_modifier_4"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_food_modifier_4.dds"
 	}
-	#矿物
+	#
 	spriteType = {
 		name = "GFX_ark_produce_minerals_modifier_1"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_minerals_modifier_1.dds"
@@ -269,7 +297,7 @@ spriteTypes = {
 		name = "GFX_ark_produce_minerals_modifier_4"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_minerals_modifier_4.dds"
 	}
-	#能量
+	#
 	spriteType = {
 		name = "GFX_ark_produce_energy_modifier_1"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_energy_modifier_1.dds"
@@ -286,7 +314,7 @@ spriteTypes = {
 		name = "GFX_ark_produce_energy_modifier_4"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_energy_modifier_4.dds"
 	}
-	#合金
+	#
 	spriteType = {
 		name = "GFX_ark_produce_alloys_modifier_1"
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_alloys_modifier_1.dds"
@@ -306,7 +334,7 @@ spriteTypes = {
 }
 
 #########
-#H槽生产人力
+#
 ###########
 
 spriteTypes = {
@@ -323,4 +351,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/ark_produce_manpower_3.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_ev_homeless_build_ship_1"
+		texturefile = "gfx/interface/icons/ship_parts/ev_homeless_build_ship_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ev_produce_food_to_society_research_1"
+		texturefile = "gfx/interface/icons/ship_parts/ev_produce_food_to_society_research_1.dds"
+	}
+	#spriteType = {
+	#	name = "GFX_ship_part_ev_reactor_booster_1"
+	#	texturefile = "gfx/interface/icons/ship_parts/ship_part_ev_reactor_booster.dds"
+	#}
 }

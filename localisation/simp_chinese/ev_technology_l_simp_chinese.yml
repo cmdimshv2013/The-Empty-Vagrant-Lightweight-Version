@@ -29,7 +29,7 @@
  tech_exploring_unknown_1:0 "探索未知"
  tech_exploring_unknown_1_desc:0 "茫茫群星中，或许我们是第一个，或许我们是最后一个，亦或许只有我们一个。但无论如何，既然我们勇敢的迈出第一步，那么就不能就此止步"
  tech_exploring_unknown_1.title:0 "§H解锁功能：§!勘测奖励"
- tech_exploring_unknown_1.desc:0 "§H勘测奖励§!\n每勘测完一个星球，随机获得§G0.25§!个月产出的§Y£energy£$energy$ £minerals£$minerals$ £food£$food$ £unity£$unity$ £influence£$influence$§!中的其中一种。\n且必定获得§G0.25§!个月的§Y£physics_research$physics_research$ £society_research£$society_research$ £engineering_research£$engineering_research$§!产出"
+ tech_exploring_unknown_1.desc:0 "§H勘测奖励§!\n每勘测完一个星球，随机获得§G0.15§!个月产出的§Y£energy£$energy$ £minerals£$minerals$ £food£$food$ £unity£$unity$ £influence£$influence$§!中的其中一种。\n且必定获得§G0.15§!个月的§Y£physics_research$physics_research$ £society_research£$society_research$ £engineering_research£$engineering_research$§!产出"
 
  tech_exploring_unknown_2:0 "深空礼赞"
  tech_exploring_unknown_2_desc:0 "宇宙是万物用创造与毁灭谱写的一曲赞歌。奇迹源于创造，遗迹源于毁灭。不要在事物中寻找宝藏，事物本身即是宝藏，等待着我们去发现。"
@@ -168,12 +168,13 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  tech_civic_points:0 "舰队整合"
  tech_civic_points_desc:0 "先进的技术不仅能带来生产力的提升，更重要的是带来思维和管理模式的变革。"
 
- tech_homeless_section_templates_1:0 "家园舰轻型模块"
- tech_homeless_section_templates_2:0 "家园舰小型模块"
- tech_homeless_section_templates_3:0 "家园舰中型模块"
- tech_homeless_section_templates_4:0 "家园舰大型模块"
- tech_homeless_section_templates_5:0 "家园舰重型模块"
- tech_homeless_section_templates_6:0 "家园舰巨型模块"
+ tech_homeless_section_templates_1:0 "家园舰轻型生产模块"
+ tech_homeless_section_templates_2:0 "家园舰小型生产模块"
+ tech_homeless_section_templates_3:0 "家园舰中型生产模块"
+ tech_homeless_section_templates_4:0 "家园舰大型生产模块"
+ tech_homeless_section_templates_5:0 "家园舰重型生产模块"
+ tech_homeless_section_templates_6:0 "家园舰超重型生产模块"
+ tech_homeless_section_templates_7:0 "家园舰极限型生产模块"
 
  tech_homeless_section_templates_1_desc:0 "技术的革新可以使我们可以解锁更强大的家园舰模块。"
  tech_homeless_section_templates_2_desc:0 "技术的革新可以使我们可以解锁更强大的家园舰模块。"
@@ -181,6 +182,7 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  tech_homeless_section_templates_4_desc:0 "技术的革新可以使我们可以解锁更强大的家园舰模块。"
  tech_homeless_section_templates_5_desc:0 "技术的革新可以使我们可以解锁更强大的家园舰模块。"
  tech_homeless_section_templates_6_desc:0 "技术的革新可以使我们可以解锁更强大的家园舰模块。"
+ tech_homeless_section_templates_7_desc:0 "技术的革新可以使我们可以解锁更强大的家园舰模块。"
 
  tech_fathership_section_templates_1:0 "世界舰微型模块"
  tech_fathership_section_templates_2:0 "世界舰轻型模块"
@@ -421,41 +423,60 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  unlock_tech_homeless_production_resources_3_desc:0 "这项技术是我们研究某种III级生产具体资源技术的基础。（除了稀有资源和科研）"
 
  #通用
+ tech_homeless_production_resources_sr_dark_matter_1:0 "$sr_dark_matter$生产模块"
+ tech_homeless_production_resources_sr_dark_matter_1_desc:0 "先进的物理学能让我们从虚空中提取暗物质为我们所用。但由于其复杂原理以及相关辅助设施，此类提取模块难以完成小型化。"
+ tech_homeless_production_resources_sr_zro_1:0 "$sr_zro$生产模块"
+ tech_homeless_production_resources_sr_zro_1_desc:0 "曾经$sr_zro$被认为是不可能在家园舰上进行规模化生产的，而现在我们将改变这一现状。"
+ tech_homeless_production_resources_nanites_1:0 "$nanites$生产模块"
+ tech_homeless_production_resources_nanites_1_desc:0 "通过模拟$nanites$的生产环境，我们得以增殖这种奇迹般的纳米致动器为我们所用。"
+ tech_homeless_production_resources_sr_living_metal_1:0 "$sr_living_metal$生产模块"
+ tech_homeless_production_resources_sr_living_metal_1_desc:0 "通过加入特定催化剂，我们能让普通金属转变为具有$sr_living_metal$性质的形态，它们与天然$sr_living_metal$无异。"
+
  tech_homeless_production_resources_minerals_1:0 "矿物生产舱"
  tech_homeless_production_resources_minerals_1_desc:0 "家园舰可以吸收星际尘埃，并提取和精炼出有价值的矿物。"
  tech_homeless_production_resources_minerals_2:0 "矿物高效生产舱"
  tech_homeless_production_resources_minerals_2_desc:0 "家园舰可以拦截流星体，并提取和精炼出有价值的矿物。"
  tech_homeless_production_resources_minerals_3:0 "矿物极效生产舱"
  tech_homeless_production_resources_minerals_3_desc:0 "家园舰可以拖曳小行星，并提取和精炼出有价值的矿物。"
- 
+ tech_homeless_production_resources_minerals_4:0 "巨型矿物极效生产舱"
+ tech_homeless_production_resources_minerals_4_desc:0 "通过提炼在宇宙空间散布的粒子，我们能将其高效地合成所需的矿产。"
+
  tech_homeless_production_resources_energy_1:0 "能量生产舱"
  tech_homeless_production_resources_energy_1_desc:0 "过去我们获取能量的方式是对恒星的模仿，但可控核聚变技术可以创造的与恒星无异。"
  tech_homeless_production_resources_energy_2:0 "能量高效生产舱"
  tech_homeless_production_resources_energy_2_desc:0 "使用物质释放能量对于时间与资源都是极大的浪费，通过正反物质湮灭将物质可以完全转化为能量，物尽其用。"
  tech_homeless_production_resources_energy_3:0 "能量极效生产舱"
  tech_homeless_production_resources_energy_3_desc:0 "真空并非空无一物，宇宙的量子涨落中有巨大的能量，而家园舰则可以提取其能量，提升自己的效能。"
- 
+ tech_homeless_production_resources_energy_4:0 "巨型能量极效生产舱"
+ tech_homeless_production_resources_energy_4_desc:0 "能量，源源不绝，而巨型家园舰前所未有的广阔空间使得我们得以进一步进行能量提取。"
+
  tech_homeless_production_resources_food_1:0 "食物生产舱"
  tech_homeless_production_resources_food_1_desc:0 "饲养牲畜需要占用家园舰宝贵的空间，其将饲料转化为动物蛋白的效率也过于低下，直接用植物蛋白合成人造肉无疑更加高效。"
  tech_homeless_production_resources_food_2:0 "食物高效生产舱"
  tech_homeless_production_resources_food_2_desc:0 "藻类的繁殖速度比高等植物快得多，只需要提供给它们光照、水分和一点点饲料，它们就可以回报足以使任何一个有机种族兴旺成长的食物。"
  tech_homeless_production_resources_food_3:0 "食物极效生产舱"
  tech_homeless_production_resources_food_3_desc:0 "经过基因编辑的微生物多产且富含营养，而固定化酶技术则可以将其转变为想要的任何食物，其口感甚至比天然食品更加优越。"
- 
+ tech_homeless_production_resources_food_4:0 "巨型食物极效生产舱"
+ tech_homeless_production_resources_food_4_desc:0 "巨型家园舰的应用使得我们拥有前所未有的广阔空间进行农业生产。"
+
  tech_homeless_production_resources_alloys_1:0 "合金生产舱"
  tech_homeless_production_resources_alloys_1_desc:0 "各种矿物在巨型熔炉中加热熔化，再被注入到金属型腔内直接压铸成型，最后由数控机床精加工为所需的部件。"
  tech_homeless_production_resources_alloys_2:0 "合金高效生产舱"
  tech_homeless_production_resources_alloys_2_desc:0 "在易爆微粒的帮助下，很多原本无法结合的金属也能制成合金。在爆炸的冲击下，这些金属的粒子高速碰撞互相嵌入，紧密的结合在一起。"
  tech_homeless_production_resources_alloys_3:0 "合金极效生产舱"
  tech_homeless_production_resources_alloys_3_desc:0 "由纳米机器人辅助的合金生产舱像智慧生物肢体一样灵活，可以自由改变铸模的形状，极大提高了合金的产量与质量。"
- 
+ tech_homeless_production_resources_alloys_4:0 "巨型合金极效生产舱"
+ tech_homeless_production_resources_alloys_4_desc:0 "这种应用在巨型家园舰上的生产透镜能使得我们在原子级别克隆出致密合金。"
+
  tech_homeless_production_resources_consumer_goods_1:0 "消费品生产舱"
  tech_homeless_production_resources_consumer_goods_1_desc:0 "立体打印机组成的流水线不仅可以批量生产消费品，而且可以满足消费者多样化的个性需求。"
  tech_homeless_production_resources_consumer_goods_2:0 "消费品高效生产舱"
  tech_homeless_production_resources_consumer_goods_2_desc:0 "真空中金属之间很容易因为分子扩散而粘合，借助宇宙真空环境建造的生产舱可以用冷焊的方式轻松将电子元件组装成消费品。"
  tech_homeless_production_resources_consumer_goods_3:0 "消费品极效生产舱"
  tech_homeless_production_resources_consumer_goods_3_desc:0 "只要预存过设计图，纳米机器人便几乎可以生产出想要的所有东西，从幼年个体喜欢的玩具到家园舰的替换部件。"
- 
+ tech_homeless_production_resources_consumer_goods_4:0 "巨型消费品极效生产舱"
+ tech_homeless_production_resources_consumer_goods_4_desc:0 "广阔的空间带来的是广泛的消费品产业的繁荣。"
+
  #石头人
  tech_homeless_production_resources_minerals_1_lithoid:0 "矿物生产舱"
  tech_homeless_production_resources_minerals_1_lithoid_desc:0 "石质生物对矿物的了解是有机生物难以企及的，即使是星际物质，也可以以此类推。"
@@ -564,15 +585,15 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  tech_homeless_production_food_energy_resources_1_desc:0 "$ev_ark_produce_food_energy_1_machine_DESC$"
  
  tech_homeless_space_research_base_1:0 "太空科研舱室"
- tech_homeless_space_research_base_1_desc:0 "-我们只能对科学家们提供狭小的舱室由于科研-"
+ tech_homeless_space_research_base_1_desc:0 "无重力环境是探索真理的不二选择，基于此开展的各项科学项目将会证明我们的成功。"
  tech_homeless_space_research_base_2:0 "太空科研所"
- tech_homeless_space_research_base_2_desc:0 "-即使是物资匮乏的太空中，我们也不会放弃对科研的追求-"
+ tech_homeless_space_research_base_2_desc:0 "我们可以进一步扩大化科研设施与改善相应环境，毕竟总不能没有物质保障就去搞科研。"
  tech_homeless_space_research_base_3:0 "太空科研基地"
- tech_homeless_space_research_base_3_desc:0 "-在对太空科研所进行了一些扩张后，科研的效率大大提高了-"
+ tech_homeless_space_research_base_3_desc:0 "全新的综合性基地，集成了大量的细枝末节的子学科研究室，这能让我们的科研工作者更加专注于突破极限。"
  tech_homeless_space_research_base_4:0 "太空科研中心"
- tech_homeless_space_research_base_4_desc:0 "-在太空科研，并不比在地面的环境要差，恰恰相反，太空的特殊环境提供了许多科研所可遇不可求的机会-"
+ tech_homeless_space_research_base_4_desc:0 "极度复杂和极度精密的科学设施组成了一个足以让拘泥于星球束缚的文明而颤抖的科学研究中心。"
  tech_homeless_space_research_base_5:0 "太空科研枢纽"
- tech_homeless_space_research_base_5_desc:0 "-在耗费了大量的资源更新科研基地的设备后，我们科研自豪的宣传，这是这个宇宙独一无二的的科研枢纽-"
+ tech_homeless_space_research_base_5_desc:0 "巨型的家园舰就应该配上巨型的科研枢纽。"
  
  tech_homeless_space_research_base_1_lithoid:0 "太空科研舱室"
  tech_homeless_space_research_base_1_lithoid_desc:0 "-我们只能对科学家们提供狭小的舱室由于科研-"
@@ -583,7 +604,7 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  tech_homeless_space_research_base_4_lithoid:0 "太空科研中心"
  tech_homeless_space_research_base_4_lithoid_desc:0 "-在太空进行研究，并不比在地面的环境要差，恰恰相反，太空的特殊环境提供了许多科研所可遇不可求的机会-"
  tech_homeless_space_research_base_5_lithoid:0 "太空科研枢纽"
- tech_homeless_space_research_base_5_lithoid_desc:0 "-在耗费了大量的资源更新科研基地的设备后，我们科研自豪的宣传，这是这个宇宙独一无二的的科研枢纽-"
+ tech_homeless_space_research_base_5_lithoid_desc:0 "-在耗费了大量的资源更新科研基地的设备后，我们得以自豪的宣传，这是这个宇宙独一无二的的科研枢纽-"
  
  tech_homeless_space_research_base_1_machine:0 "太空科研舱室"
  tech_homeless_space_research_base_1_machine_desc:0 "-迫于有限空间与器材，科研单位仅能进行基础的研究活动-"
@@ -663,10 +684,10 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  tech_space_minerals_base_output_2:0 "小行星开采"
  tech_space_minerals_base_output_2_desc:0 "我们的舰船可以拖曳大于自身体积的流星体或小行星，借助采矿激光与化学冲刷，可以轻易将其拆解提炼。"
  tech_space_minerals_base_output_3:0 "地震模拟探测"
- tech_space_minerals_base_output_3_desc:0 "通过在行星地下爆破来模拟地震，地震波如果遇到地层的交界面就会反射，借此我们可以发现行星最深处的矿藏。"
+ tech_space_minerals_base_output_3_desc:0 "通过在任何行星地下爆破来模拟地震，地震波如果遇到地层的交界面就会反射，借此我们可以发现行星最深处的矿藏。"
  
- tech_space_research_base_output_1:0 "量子理论"
- tech_space_research_base_output_1_desc:0 "通过亚原子粒子探索基本力的作用机理。"
+ tech_space_research_base_output_1:0 "量场理论"
+ tech_space_research_base_output_1_desc:0 "通过模型化微观粒子的复杂行动能让我们对于万物之理的研究更进一步。"
  tech_space_research_base_output_2:0 "超固体材料"
  tech_space_research_base_output_2_desc:0 "超固体在具备固体般的晶格结构的同时保留了超流特性，对其充分了解并投入应用可以使我们受益匪浅。"
  tech_space_research_base_output_3:0 "超流体材料"
@@ -678,7 +699,7 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  tech_ev_maintenance_1_desc:0 "通过确定统一的舰队联络标准，可以让各个分支舰队的意图无损失的表达，从而避免了相互的猜疑。"
  tech_ev_maintenance_2:0 "舰队联络标准 II"
  tech_ev_maintenance_2_desc:0 "通过规范化以及添加注释，这可以让之前的舰队联络标准变得更具有可执行性。"
- TECH_EV_MAINTENANCE_ADD:0 "维持度上限: §G+15§!"
+ TECH_EV_MAINTENANCE_ADD:0 "维持度平衡值: §G+10%§!"
  
  tech_homeless_production_resources_manpower_1:0 "居住单元"
  tech_homeless_production_resources_manpower_1_desc:0 "单调但能保障基本生活的居住单元，丝毫不浪费宝贵空间，简约而高效。"
@@ -705,7 +726,14 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  tech_ev_destructive_mining_desc:0 "作为一只舰队我们需要一次性将资源全部带走，这个星球的未来并不在我们考虑的范围内。"
  EV_DESTRUCTIVE_MINING_1:0 "§H解锁政策：§!$ev_destructive_mining$"
  EV_DESTRUCTIVE_MINING_1_DESC:0 "§H$ev_destructive_mining$§!\n此政策可以允许我们进行破坏性开采作业，快速而短暂地获取大量资源。"
+ ev_planet_mining_tech_level:0 "破坏性开采科技等级"
+ GIVE_EV_DESTRUCTIVE_MINING_LEVEL_DESC:0 "$ev_planet_mining_tech_level$: §G+1§!"
+ tech_ev_destructive_mining_2:0 "破坏性开采作业: 专业化"
+ tech_ev_destructive_mining_2_desc:0 "通过向目标星球派遣地质学家或者科研人员，我们能容易地找到隐藏在此的宝贵资源"
  
+ tech_ev_destructive_mining_3:0 "破坏性开采作业: 高反应"
+ tech_ev_destructive_mining_3_desc:0 "深入地壳甚至地核，或者走遍整个行星，一次又一次的全面资源调查总能带来一些额外的惊喜。"
+
  tech_ev_genetic_trait:0 "太虚特性修饰"
  tech_ev_genetic_trait_desc:0 "最新的技术和工程可以让我们修改种族的特性，我们不用再被星球时代带来的传统所束缚了。"
  EV_GENETIC_TRAIT_1:0 "§H解锁功能：§!太虚种族特质修改"
@@ -713,8 +741,193 @@ tech_war_fortress_desc:0 "永不陷落的要塞当以合金铸就血肉，在其
  
  tech_megastructures_homeless_ship:0 "深空巨舰建造"
  tech_megastructures_homeless_ship_desc:0 "过去舰船的大小受限于天体引力与船坞的大小，现在全新的深空巨型建造技术带来的是前所未有的宏伟舰船。"
+ tech_megastructures_homeless_ship_2:0 "优化巨舰建造"
+ tech_megastructures_homeless_ship_2_desc:0 "即使是难以想象的巨型舰船，随着科技进步也仍有进一步完善的可能。"
  
  tech_homeless_space_research_base_6:0 "巨型深空科研基地"
  tech_homeless_space_research_base_6_desc:0 "基于扭曲基本物质粒子的先进技术，能让我们进行各种无法计数且难以想象的科学实验。"
  tech_homeless_space_research_base_6_machine:0 "巨型深空科研基地"
  tech_homeless_space_research_base_6_machine_desc:0 "基于扭曲基本物质粒子的先进技术，能让我们进行各种无法计数且难以想象的科学实验。"
+
+ tech_ship_part_homeless_produce_build_ship_1:0 "舰载船坞模块"
+ tech_ship_part_homeless_produce_build_ship_1_desc:0 "此项技术允许我们在家园舰上便可进行舰船建造，而无需恒星基地。"
+
+ tech_ev_naval_capacity_add:0 "分支舰队协调规程"
+ tech_ev_naval_capacity_add_desc:0 "通过改善分支舰队与中央舰队的协调规程将可以节省更多资源，用以维持更大的舰队。"
+
+ tech_ev_void_reactor_bosster_1:0 "点和循环方法"
+ tech_ev_void_reactor_bosster_1_desc:0 "仅仅是虚空学感受到的皮毛，便可以让我们能在微观层面拓展宏观。"
+ tech_ev_void_reactor_bosster_2:0 "点和超循环论"
+ tech_ev_void_reactor_bosster_2_desc:0 "进一步感悟虚空的教导，能让我们得以在小范围内重新构筑事件因果。"
+ tech_ev_void_reactor_bosster_3:0 "点和极循环论"
+ tech_ev_void_reactor_bosster_3_desc:0 "研究虚空的成果之一，某种程度上重新复现了虚空，虽然规模只有一个家园舰大小的地方。"
+
+ gateway_homeless_production:0 "§H舰载生产之道§!\n§E此科技可以推动舰载生产科技的发展。§!"
+
+ 
+ tech_ev_eco_industry:0 "生态工业学"
+ tech_ev_eco_industry_desc:0 "资源的循环与再生产是整个舰载生产系统的基础核心理论。"
+ 
+ tech_ev_eco_industry_2:0 "再循环理论"
+ tech_ev_eco_industry_2_desc:0 "尽管完全循环是不可能的，但我们总能不断逼近这一极限。"
+ 
+ tech_ev_eco_industry_3:0 "生态化思维"
+ tech_ev_eco_industry_3_desc:0 "顺其自然，遵从本原。"
+ 
+ tech_ev_eco_industry_4:0 "二次工业化"
+ tech_ev_eco_industry_4_desc:0 "完善生态工业化的二次工业化是极为必须的。"
+ 
+ homeless_production:0 "生态工业学"
+ homeless_production_desc:0 "研究在舰船上资源的完整循环与再生产。"
+
+#原版体系的科技-独特修正
+ ev_tech_space_science_1:0 "TEV: $tech_space_science_1$"
+ ev_tech_space_science_1_desc:0 ""
+ ev_tech_space_science_2:0 "TEV: $tech_space_science_2$"
+ ev_tech_space_science_2_desc:0 ""
+ ev_tech_space_science_3:0 "TEV: $tech_space_science_3$"
+ ev_tech_space_science_3_desc:0 ""
+ ev_tech_space_science_4:0 "TEV: $tech_space_science_4$"
+ ev_tech_space_science_4_desc:0 ""
+ ev_tech_space_science_5:0 "TEV: $tech_space_science_5$"
+ ev_tech_space_science_5_desc:0 ""
+
+
+ ev_tech_physics_1:0 "TEV: $tech_physics_1$"
+ ev_tech_physics_1_desc:0 ""
+ ev_tech_physics_2:0 "TEV: $tech_physics_2$"
+ ev_tech_physics_2_desc:0 ""
+ ev_tech_physics_3:0 "TEV: $tech_physics_3$"
+ ev_tech_physics_3_desc:0 ""
+
+ ev_tech_cryostasis_1:0 "TEV: $tech_cryostasis_1$"
+ ev_tech_cryostasis_1_desc:0 ""
+ ev_tech_cryostasis_2:0 "TEV: $tech_cryostasis_2$"
+ ev_tech_cryostasis_2_desc:0 ""
+
+ ev_tech_consumer_good_refinement_1:0 "TEV: $tech_consumer_good_refinement_1$"
+ ev_tech_consumer_good_refinement_1_desc:0 ""
+ ev_tech_consumer_good_refinement_2:0 "TEV: $tech_consumer_good_refinement_2$"
+ ev_tech_consumer_good_refinement_2_desc:0 ""
+
+ ev_tech_power_plant_2:0 "TEV: $tech_power_plant_2$"
+ ev_tech_power_plant_2_desc:0 ""
+ ev_tech_power_plant_3:0 "TEV: $tech_power_plant_3$"
+ ev_tech_power_plant_3_desc:0 ""
+ ev_tech_power_plant_4:0 "TEV: $tech_power_plant_4$"
+ ev_tech_power_plant_4_desc:0 ""
+ ev_tech_power_plant_5:0 "TEV: $tech_power_plant_5$"
+ ev_tech_power_plant_5_desc:0 ""
+
+
+ ev_tech_prescient_data_modeling:0 "TEV: $tech_prescient_data_modeling$"
+ ev_tech_prescient_data_modeling_desc:0 ""
+ ev_tech_eco_simulation:0 "TEV: $tech_eco_simulation$"
+ ev_tech_eco_simulation_desc:0 ""
+ ev_tech_gene_crops:0 "TEV: $tech_gene_crops$"
+ ev_tech_gene_crops_desc:0 ""
+ ev_tech_nano_vitality_crops:0 "TEV: $tech_nano_vitality_crops$"
+ ev_tech_nano_vitality_crops_desc:0 ""
+ ev_tech_nutrient_replication:0 "TEV: $tech_nutrient_replication$"
+ ev_tech_nutrient_replication_desc:0 ""
+
+ ev_tech_society_1:0 "TEV: $tech_society_1$"
+ ev_tech_society_1_desc:0 ""
+ ev_tech_society_2:0 "TEV: $tech_society_2$"
+ ev_tech_society_2_desc:0 ""
+ ev_tech_society_3:0 "TEV: $tech_society_3$"
+ ev_tech_society_3_desc:0 ""
+ ev_tech_society_4:0 "TEV: $tech_society_4$"
+ ev_tech_society_4_desc:0 ""
+ ev_tech_society_5:0 "TEV: $tech_society_5$"
+ ev_tech_society_5_desc:0 ""
+
+ ev_tech_colonization_2:0 "TEV: $tech_colonization_2$"
+ ev_tech_colonization_2_desc:0 ""
+ ev_tech_colonization_3:0 "TEV: $tech_colonization_3$"
+ ev_tech_colonization_3_desc:0 ""
+ ev_tech_colonization_4:0 "TEV: $tech_colonization_4$"
+ ev_tech_colonization_4_desc:0 ""
+ ev_tech_colonization_5:0 "TEV: $tech_colonization_5$"
+ ev_tech_colonization_5_desc:0 ""
+
+
+ ev_tech_tomb_world_adaption:0 "TEV: $tech_tomb_world_adaption$"
+ ev_tech_tomb_world_adaption_desc:0 ""
+ ev_tech_genome_mapping:0 "TEV: $tech_genome_mapping$"
+ ev_tech_genome_mapping_desc:0 ""
+ ev_tech_cloning:0 "TEV: $tech_cloning$"
+ ev_tech_cloning_desc:0 ""
+
+ ev_tech_galactic_ambitions:0 "TEV: $tech_galactic_ambitions$"
+ ev_tech_galactic_ambitions_desc:0 ""
+ ev_tech_manifest_destiny:0 "TEV: $tech_manifest_destiny$"
+ ev_tech_manifest_destiny_desc:0 ""
+
+ ev_tech_planetary_infrastructure_1:0 "TEV: $tech_planetary_infrastructure_1$"
+ ev_tech_planetary_infrastructure_1_desc:0 ""
+ ev_tech_planetary_infrastructure_2:0 "TEV: $tech_planetary_infrastructure_2$"
+ ev_tech_planetary_infrastructure_2_desc:0 ""
+
+ ev_tech_living_state:0 "TEV: $tech_living_state$"
+ ev_tech_living_state_desc:0 ""
+ ev_tech_artificial_moral_codes:0 "TEV: $tech_artificial_moral_codes$"
+ ev_tech_artificial_moral_codes_desc:0 ""
+ ev_tech_synthetic_thought_patterns:0 "TEV: $tech_synthetic_thought_patterns$"
+ ev_tech_synthetic_thought_patterns_desc:0 ""
+ ev_tech_unity_of_purpose:0 "TEV: $tech_unity_of_purpose$"
+ ev_tech_unity_of_purpose_desc:0 ""
+ ev_tech_collective_production_methods:0 "TEV: $tech_collective_production_methods$"
+ ev_tech_collective_production_methods_desc:0 ""
+ ev_tech_resource_processing_algorithms:0 "TEV: $tech_resource_processing_algorithms$"
+ ev_tech_resource_processing_algorithms_desc:0 ""
+ ev_tech_powered_exoskeletons:0 "TEV: $tech_powered_exoskeletons$"
+ ev_tech_powered_exoskeletons_desc:0 ""
+
+ 
+ ev_tech_space_mining_1:0 "TEV: $tech_space_mining_1$"
+ ev_tech_space_mining_1_desc:0 ""
+ ev_tech_space_mining_2:0 "TEV: $tech_space_mining_2$"
+ ev_tech_space_mining_2_desc:0 ""
+ ev_tech_space_mining_3:0 "TEV: $tech_space_mining_3$"
+ ev_tech_space_mining_3_desc:0 ""
+ ev_tech_space_mining_4:0 "TEV: $tech_space_mining_4$"
+ ev_tech_space_mining_4_desc:0 ""
+ ev_tech_space_mining_5:0 "TEV: $tech_space_mining_5$"
+ ev_tech_space_mining_5_desc:0 ""
+
+ ev_tech_mining_1:0 "TEV: $tech_mining_1$"
+ ev_tech_mining_1_desc:0 ""
+ ev_tech_mining_2:0 "TEV: $tech_mining_2$"
+ ev_tech_mining_2_desc:0 ""
+ ev_tech_mining_3:0 "TEV: $tech_mining_3$"
+ ev_tech_mining_3_desc:0 ""
+
+ ev_tech_advanced_metallurgy_1:0 "TEV: $tech_advanced_metallurgy_1$"
+ ev_tech_advanced_metallurgy_1_desc:0 ""
+ ev_tech_advanced_metallurgy_2:0 "TEV: $tech_advanced_metallurgy_2$"
+ ev_tech_advanced_metallurgy_2_desc:0 ""
+ ev_tech_advanced_metallurgy_3:0 "TEV: $tech_advanced_metallurgy_3$"
+ ev_tech_advanced_metallurgy_3_desc:0 ""
+ 
+ ev_tech_engineering_1:0 "TEV: $tech_engineering_1$"
+ ev_tech_engineering_1_desc:0 ""
+ ev_tech_engineering_2:0 "TEV: $tech_engineering_2$"
+ ev_tech_engineering_2_desc:0 ""
+ ev_tech_engineering_3:0 "TEV: $tech_engineering_3$"
+ ev_tech_engineering_3_desc:0 ""
+
+ 
+ ev_tech_synthetic_workers:0 "TEV: $tech_synthetic_workers$"
+ ev_tech_synthetic_workers_desc:0 ""
+ ev_tech_synthetic_leaders:0 "TEV: $tech_synthetic_leaders$"
+ ev_tech_synthetic_leaders_desc:0 ""
+ ev_tech_assembly_pattern:0 "TEV: $tech_assembly_pattern$"
+ ev_tech_assembly_pattern_desc:0 ""
+ ev_tech_construction_templates:0 "TEV: $tech_construction_templates$"
+ ev_tech_construction_templates_desc:0 ""
+
+ tech_ev_void_amry:0 "虚母圣军团"
+ tech_ev_void_amry_desc:0 "虚母圣军团是由一群身经百战且永远忠诚于虚母教义的可怕战士所组成，他们会毫不犹豫的撕碎一切。"
+
+ 

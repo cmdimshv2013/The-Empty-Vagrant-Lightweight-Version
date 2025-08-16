@@ -1,72 +1,88 @@
 namespace = ev_routine
-
 #勘测奖励
 ship_event = {
 	id = ev_routine.1
 	hide_window = yes
 	location = from
 	is_triggered_only = yes
-
 	trigger = {
-		owner = {
-			has_technology = tech_exploring_unknown_1 
-			NOT = { has_technology = tech_exploring_unknown_2 }
-		} 
-	}
-
-	immediate = {	
-		while = {
-			count = base_survey_resource_ev
-			give_survey_resource_ev = yes
-		}
-		if = {
-			limit = { 
-				owner = {
-					has_ascension_perk = ev_exploring_unknown
+		fleet = {
+			owner = {
+				OR = {
+					has_technology = tech_exploring_unknown_1
+					has_technology = tech_exploring_unknown_2
 				}
-			} 
-			while = {
-				count = base_survey_resource_ev
-				give_survey_resource_ev = yes
-				give_survey_resource_ev = yes
 			}
 		}
 	}
-}
-
-ship_event = {
-	id = ev_routine.2
-	hide_window = yes
-	location = from
-	is_triggered_only = yes
-
-	trigger = {
-		owner = {
-			has_technology = tech_exploring_unknown_1 
-			has_technology = tech_exploring_unknown_2
-		} 
-	}
-
 	immediate = {
-		while = {
-			count = base_survey_resource_ev
-			give_survey_resource_ev_2 = yes
-		}
+
 		if = {
-			limit = { 
-				owner = {
-					has_ascension_perk = ev_exploring_unknown
+			limit = { owner = { has_technology = tech_exploring_unknown_1 } }
+			give_survey_resource_ev = { VAR = 0.15 }
+			if = {
+				limit = {
+					owner = {
+						has_ascension_perk = ev_exploring_unknown
+					}
 				}
-			} 
-			while = {
-				count = base_survey_resource_ev
-				give_survey_resource_ev_2 = yes
-				give_survey_resource_ev_2 = yes
+				give_survey_resource_ev = { VAR = 0.15 }
+				leader = {
+					add_experience = 25
+				}
 			}
 		}
-	}	
+
+		else_if = {
+			limit = { owner = { has_technology = tech_exploring_unknown_2 } }
+			give_survey_resource_ev = { VAR = 0.5 }
+			if = {
+				limit = {
+					owner = {
+						has_ascension_perk = ev_exploring_unknown
+					}
+				}
+				give_survey_resource_ev = { VAR = 0.5 }
+				leader = {
+					add_experience = 25
+				}
+			}
+
+		}
+		
+	}
 }
 
+#ship_event = {
+#	id = ev_routine.2
+#	hide_window = yes
+#	location = from
+#	is_triggered_only = yes
+#	trigger = {
+#		owner = {
+#			has_technology = tech_exploring_unknown_1
+#			has_technology = tech_exploring_unknown_2
+#		}
+#	}
+#	immediate = {
+#		while = {
+#			count = base_survey_resource_ev
+#			
+#		}
+#		if = {
+#			limit = {
+#				owner = {
+#					has_ascension_perk = ev_exploring_unknown
+#				}
+#			}
+#			while = {
+#				count = base_survey_resource_ev
+#				give_survey_resource_ev_2 = yes
+#				give_survey_resource_ev_2 = yes
+#			}
+#		}
+#	}
+#}
 
 #资源打包带走
 event = {
@@ -74,86 +90,83 @@ event = {
 	hide_window = yes
 	location = ROOT
 	is_triggered_only = yes
-
 	immediate = {
-	limit = { has_technology = tech_exploring_unknown_1 }
-	random_list = {
-	  20 = {
-	     From = {
-	     clear_deposits = yes
-	    }
-	     ROOT = {
-	     clear_deposits = yes
-	    }
-	     clear_deposits = yes
-	owner = {
-	      add_monthly_resource_mult = {
-	          resource = energy
-	          value = 3
-	          min = 50
-			} 
-	      add_monthly_resource_mult = {
-	          resource = minerals
-	          value = 3
-	          min = 50
-			} 
-	      add_monthly_resource_mult = {
-	          resource = alloys
-	          value = 3
-	          min = 10
-			} 
+		if = {
+			limit = {
+				has_technology = tech_exploring_unknown_1
+			}
+			random_list = {
+				20 = {
+					From = {
+						clear_deposits = yes
+					}
+					ROOT = {
+						clear_deposits = yes
+					}
+					clear_deposits = yes
+					owner = {
+						add_monthly_resource_mult = {
+							resource = energy
+							value = 3
+							min = 50
+						}
+						add_monthly_resource_mult = {
+							resource = minerals
+							value = 3
+							min = 50
+						}
+						add_monthly_resource_mult = {
+							resource = alloys
+							value = 3
+							min = 10
+						}
+					}
+				}
+				80 = {
+				}
+			}
 		}
+		
+		
 	}
-	80 = {}
-	}
-        }	
 }
 
 #外交补正
 #也整不出来
 event = {
 	id = ev_routine.10
-#	hide_window = yes
+	#	hide_window = yes
 	picture = GFX_evt_space_station
 	location = FromFrom
 	is_triggered_only = yes
-	
 	trigger = {
 		from = {
-			NOT = { is_country_type = default_ev }
-
+			NOT = {
+				is_default_ev_country_type = yes
+			}
 		}
 		This = {
-			is_country_type = default_ev
+			is_default_ev_country_type = yes
 		}
 	}
-	
-	immediate = {
-		
-  }
-  
-  option = {
-		name = OK		
-		
+	option = {
+		name = OK
 		#has bug ,can not from to this
 		from = {
-		add_opinion_modifier = {
-			who = this
-			modifier = opinion_nomadic_fleet 
+			add_opinion_modifier = {
+				who = this
+				modifier = opinion_nomadic_fleet
 			}
 		}
 		#effect is from to from
-		
 		this = {
-		add_opinion_modifier = {
-			who = from
-			modifier = opinion_nomadic_fleet 
+			add_opinion_modifier = {
+				who = from
+				modifier = opinion_nomadic_fleet
 			}
 		}
 	}
-  
 }
-
 
 #孤军奋战
 country_event = {
@@ -161,32 +174,11 @@ country_event = {
 	hide_window = yes
 	location = from
 	is_triggered_only = yes
-
-	trigger = { }
 	immediate = {
-
-	add_resource = {
-		minerals = -100000
-		energy = -100000	
-		food = -100000
-		alloys = -100000
-		consumer_goods = -100000
-		influence = -1000
-		unity = -100000
-		volatile_motes = -10000
-		rare_crystals = -10000
-		exotic_gases = -10000
-		sr_dark_matter =-10000
-		sr_zro =-10000
-		} 
-
-	add_modifier = { 
-		modifier = ev_fight_alone_modifers days = 3600 
-			} 
-
+		clear_resources = yes
+		add_modifier = {
+			modifier = ev_fight_alone_modifers
+			days = 3600
+		}
 	}
 }
-
-
-
-

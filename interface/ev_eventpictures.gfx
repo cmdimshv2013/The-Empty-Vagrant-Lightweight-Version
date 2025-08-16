@@ -1,8 +1,95 @@
 spriteTypes = {	
 
+  spriteType = {
+		name = "GFX_evt_ev_strategic_strike_system"
+		texturefile = "gfx/event_pictures/ev_strategic_strike_system.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
 	spriteType = {
-		name = "GFX_ship_part_thruster_heavy_elements"
-		texturefile = "gfx\interface\icons\ship_parts\ship_part_thruster_heavy_elements.dds"
+		name = "GFX_evt_ev_homeless_in_room"
+		texturefile = "gfx/event_pictures/ev_homeless_in_room.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_abandoned_homeless"
+		texturefile = "gfx/event_pictures/ev_abandoned_homeless.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_near_to_homeless"
+		texturefile = "gfx/event_pictures/ev_near_to_homeless.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	
+	spriteType = {
+		name = "GFX_evt_ev_star_trek_big"
+		texturefile = "gfx/event_pictures/ev_star_trek_big.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_star_trek"
+		texturefile = "gfx/event_pictures/ev_star_trek.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_meg_homeless_ship"
+		texturefile = "gfx/event_pictures/ev_meg_homeless_ship.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_federation_fleet"
+		texturefile = "gfx/event_pictures/ev_federation_fleet.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_big_landing_ship"
+		texturefile = "gfx/event_pictures/ev_big_landing_ship.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_arguing_senate"
+		texturefile = "gfx/event_pictures/ev_arguing_senate.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_city_ruins"
+		texturefile = "gfx/event_pictures/ev_city_ruins.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_planet_and_big_fleet"
+		texturefile = "gfx/event_pictures/ev_planet_and_big_fleet.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_origin_exiles"
+		texturefile = "gfx/event_pictures/ev_origin_exiles.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_ev_ship_travel"
+		texturefile = "gfx/event_pictures/ev_ship_travel.dds"
+		#masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_evt_advanced_homeless"
+		texturefile = "gfx/event_pictures/advanced_homeless.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
 	}
 	
 	spriteType = {

@@ -1,0 +1,1578 @@
+weapon_component_template = {
+	type = instant
+
+	key = "LARGE_pt_shot"
+	size = large
+
+	icon = "GFX_pt_shot"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 140 max = 250 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 1
+	range = 400.0
+	accuracy = 0.90
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.3          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.5       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0        # 护甲穿透系数
+	tracking = 0.27
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s1s"
+	projectile_gfx = "sg_pt_lg"
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "LARGE_pt_m_shot"
+	size = medium
+
+	icon = "GFX_sp_m"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 70 max = 125 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 1
+	range = 400.0
+	accuracy = 0.90
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.3          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.5       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0        # 护甲穿透系数
+	tracking = 0.27
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 0.5
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.25
+            alloys = 0.25
+        }
+    }
+	component_set = "s1s"
+	projectile_gfx = "sg_pt_m"
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+weapon_component_template = {
+	type = instant
+
+	key = "LARGE_pt_s_shot"
+	size = small
+
+	icon = "GFX_sp_s"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 35 max = 62 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 1
+	range = 400.0
+	accuracy = 0.90
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.3          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.5       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0        # 护甲穿透系数
+	tracking = 0.27
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 0.3
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.1
+            alloys = 0.1
+        }
+    }
+	component_set = "s1s"
+	projectile_gfx = "sg_pt_s"
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "lz_l"
+	size = large
+
+	icon = "GFX_lz_l"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 2000 max = 4000 }
+	windup = { min = 0 max =  80 }
+	total_fire_time = 240
+	range = 400.0
+	accuracy = 1
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.7          # 护盾伤害系数
+    armor_damage = 2.5             # 护甲伤害系数
+    shield_penetration = 0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.5        # 护甲穿透系数
+	tracking = 0.7
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s2s"
+	projectile_gfx = "xray_laser_l"
+	target_focus = spread
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "lz_m"
+	size = medium
+
+	icon = "GFX_lz_m"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 1000 max = 2000 }
+	windup = { min = 0 max =  80 }
+	total_fire_time = 240
+	range = 400.0
+	accuracy = 1
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.7          # 护盾伤害系数
+    armor_damage = 2.5             # 护甲伤害系数
+    shield_penetration = 0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.5        # 护甲穿透系数
+	tracking = 0.7
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s2s"
+	projectile_gfx = "xray_laser_m"
+	target_focus = spread
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "lz_s"
+	size = small
+
+	icon = "GFX_lz_s"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 500 max = 1000 }
+	windup = { min = 0 max =  80 }
+	total_fire_time = 240
+	range = 400.0
+	accuracy = 1
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.7          # 护盾伤害系数
+    armor_damage = 2.5             # 护甲伤害系数
+    shield_penetration = 0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.5        # 护甲穿透系数
+	tracking = 0.7
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s2s"
+	projectile_gfx = "xray_laser_s"
+	target_focus = spread
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "zc_l"
+	size = large
+
+	icon = "GFX_zc_l"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 200 max = 300 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 20
+	range = 400.0
+	accuracy = 0.95
+	hull_damage = 1.9           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.4          # 护盾伤害系数
+    armor_damage = 1.5             # 护甲伤害系数
+    shield_penetration = 0.0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0       # 护甲穿透系数
+	tracking = 0.50
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s3s"
+	projectile_gfx = "sws_turbolaser_large_green1"
+	tags = { weapon_type_kinetic weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "zc_m"
+	size = medium
+
+	icon = "GFX_zc_m"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 100 max = 150 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 20
+	range = 400.0
+	accuracy = 0.95
+	hull_damage = 1.9           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.4          # 护盾伤害系数
+    armor_damage = 1.5             # 护甲伤害系数
+    shield_penetration = 0.0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0       # 护甲穿透系数
+	tracking = 0.50
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s3s"
+	projectile_gfx = "sws_turbolaser_medium_green1"
+	tags = { weapon_type_kinetic weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "zc_s"
+	size = small
+
+	icon = "GFX_zc_s"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 200 max = 300 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 20
+	range = 400.0
+	accuracy = 0.95
+	hull_damage = 1.9           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.4          # 护盾伤害系数
+    armor_damage = 1.5             # 护甲伤害系数
+    shield_penetration = 0.0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0       # 护甲穿透系数
+	tracking = 0.50
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s3s"
+	projectile_gfx = "sws_turbolaser_small_green1"
+	tags = { weapon_type_kinetic weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = missile
+
+	key = "ms_l"
+	size = large
+
+	icon = "GFX_ms_l"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 600 max = 800 }
+	windup = { min = 0 max =  40 }
+	total_fire_time = 80
+	range = 400.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	total_fire_time = 80
+	range = 400.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	size_damage_factor = 0.06
+
+	missile_speed = 1
+	missile_evasion = 0.99
+	missile_shield = 1
+	missile_armor = 1
+	missile_health = 100
+	missile_retarget_range = 200
+
+	projectile_gfx = "swarmer_missiles"
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s4s"
+	tags = { weapon_type_explosive weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = missile
+
+	key = "ms_m"
+	size = medium
+
+	icon = "GFX_ms_m"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 300 max = 400 }
+	windup = { min = 0 max =  40 }
+	total_fire_time = 80
+	range = 400.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	size_damage_factor = 0.06
+
+	missile_speed = 1
+	missile_evasion = 0.99
+	missile_shield = 1
+	missile_armor = 1
+	missile_health = 100
+	missile_retarget_range = 200
+
+	projectile_gfx = "swarmer_missiles"
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s4s"
+	tags = { weapon_type_explosive weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = missile
+
+	key = "ms_s"
+	size = small
+
+	icon = "GFX_ms_s"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt2" }
+	
+	damage = { min = 150 max = 200 }
+	windup = { min = 0 max =  40 }
+	total_fire_time = 80
+	range = 400.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	total_fire_time = 80
+	range = 400.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	size_damage_factor = 0.06
+
+	missile_speed = 1
+	missile_evasion = 0.99
+	missile_shield = 1
+	missile_armor = 1
+	missile_health = 100
+	missile_retarget_range = 200
+
+	projectile_gfx = "swarmer_missiles"
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "s4s"
+	tags = { weapon_type_explosive weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+strike_craft_component_template = {
+	key = fz_st
+	size = large
+	entity = "ag_alpha_dron1e_1_entity"
+	weapon_type = large
+
+	prerequisites = { "tech_fgt2" }
+
+	icon = GFX_fz_st
+	icon_frame = 1
+
+	power = 0
+
+	# use_ship_kill_target = no
+
+	damage = { min = 10 max = 40 }
+	hull_damage = 1.2
+	shield_damage = 1.2
+	shield_penetration = 0.0
+	armor_damage = 1.2
+	armor_penetration = 0.0
+	# windup = { min = @ag_adv_fallen_empire_$ag_size_short$_windup_min max = @ag_adv_fallen_empire_$ag_size_short$_windup_max }
+
+	range = 50
+	accuracy = 1
+	tracking = 1
+	size_damage_factor = 0.02
+
+	ship_behavior = fighters_behavior
+	count = 2
+	regeneration_per_day = 10
+	launch_time = 1
+	cooldown = 1
+	evasion = 0.95
+	speed = 1000
+	rotation_speed = 1111
+	acceleration = 1111
+	engagement_range = 200
+	shield = 12
+	armor = 40
+	health = 20
+
+	projectile_gfx = "sws_turbolaser_small_green1"
+	tags = { weapon_type_strike_craft weapon_type_point_defense weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+
+	component_set = s00s
+
+	point_defence_targets = { "strike_craft" }
+}
+
+strike_craft_component_template = {
+	key = yz_st
+	size = large
+	entity = "ag_alpha_dron1e_1_entity"
+	weapon_type = point_defence
+
+	prerequisites = { "tech_fgt2" }
+
+	icon = GFX_yz_st
+	icon_frame = 1
+
+	power = 0
+
+	# use_ship_kill_target = no
+
+	damage = { min = 10 max = 40 }
+	hull_damage = 1.2
+	shield_damage = 1.2
+	shield_penetration = 0.0
+	armor_damage = 1.2
+	armor_penetration = 0.0
+	# windup = { min = @ag_adv_fallen_empire_$ag_size_short$_windup_min max = @ag_adv_fallen_empire_$ag_size_short$_windup_max }
+
+	range = 50
+	accuracy = 1
+	tracking = 1
+	size_damage_factor = 0.02
+
+	ship_behavior = fighters_behavior
+	count = 2
+	regeneration_per_day = 10
+	launch_time = 1
+	cooldown = 1
+	evasion = 0.95
+	speed = 1000
+	rotation_speed = 1111
+	acceleration = 1111
+	engagement_range = 200
+	shield = 12
+	armor = 40
+	health = 20
+
+	projectile_gfx = "sws_turbolaser_small_green1"
+	tags = { weapon_type_strike_craft weapon_type_point_defense weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+
+	component_set = s000s
+
+	point_defence_targets = { "strike_craft" }
+}
+
+
+weapon_component_template = {
+	type = instant
+
+	key = "otm_l"
+	size = large
+
+	icon = "GFX_otm_l"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 140 max = 250 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 1
+	range = 150.0
+	accuracy = 0.90
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.3          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.5       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0        # 护甲穿透系数
+	tracking = 0.27
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "pt"
+	projectile_gfx = "sg_pt_lg"
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "otm_m"
+	size = medium
+
+	icon = "GFX_otm_m"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 70 max = 125 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 1
+	range = 150.0
+	accuracy = 0.90
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.3          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.5       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0        # 护甲穿透系数
+	tracking = 0.27
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 0.5
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.25
+            alloys = 0.25
+        }
+    }
+	component_set = "pt"
+	projectile_gfx = "sg_pt_m"
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+weapon_component_template = {
+	type = instant
+
+	key = "otm_s"
+	size = small
+
+	icon = "GFX_otm_s"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 35 max = 62 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 1
+	range = 400.0
+	accuracy = 0.90
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.3          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.5       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0        # 护甲穿透系数
+	tracking = 0.27
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 0.3
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.1
+            alloys = 0.1
+        }
+    }
+	component_set = "pt"
+	projectile_gfx = "sg_pt_s"
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "lzz_l"
+	size = large
+
+	icon = "GFX_lzz_l"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 2000 max = 4000 }
+	windup = { min = 0 max =  80 }
+	total_fire_time = 240
+	range = 200.0
+	accuracy = 1
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.7          # 护盾伤害系数
+    armor_damage = 2.5             # 护甲伤害系数
+    shield_penetration = 0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.5        # 护甲穿透系数
+	tracking = 0.7
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "zl"
+	projectile_gfx = "blue_laser_l"
+	target_focus = spread
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "lzz_m"
+	size = medium
+
+	icon = "GFX_lzz_m"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 1000 max = 2000 }
+	windup = { min = 0 max =  80 }
+	total_fire_time = 240
+	range = 200.0
+	accuracy = 1
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.7          # 护盾伤害系数
+    armor_damage = 2.5             # 护甲伤害系数
+    shield_penetration = 0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.5        # 护甲穿透系数
+	tracking = 0.7
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "zl"
+	projectile_gfx = "blue_laser_m"
+	target_focus = spread
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "lzz_s"
+	size = small
+
+	icon = "GFX_lzz_s"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 500 max = 1000 }
+	windup = { min = 0 max =  80 }
+	total_fire_time = 240
+	range = 200.0
+	accuracy = 1
+	hull_damage = 1.5           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.7          # 护盾伤害系数
+    armor_damage = 2.5             # 护甲伤害系数
+    shield_penetration = 0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.5        # 护甲穿透系数
+	tracking = 0.7
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "zl"
+	projectile_gfx = "blue_laser_s"
+	target_focus = spread
+	tags = { weapon_type_energy weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+
+weapon_component_template = {
+	type = instant
+
+	key = "kk_l"
+	size = large
+
+	icon = "GFX_kk_l"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 200 max = 300 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 20
+	range = 200.0
+	accuracy = 0.95
+	hull_damage = 1.9           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.4          # 护盾伤害系数
+    armor_damage = 1.5             # 护甲伤害系数
+    shield_penetration = 0.0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0       # 护甲穿透系数
+	tracking = 0.50
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "kk"
+	projectile_gfx = "sws_turbolaser_large_green1"
+	tags = { weapon_type_kinetic weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "kk_m"
+	size = medium
+
+	icon = "GFX_kk_m"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 100 max = 150 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 20
+	range = 200.0
+	accuracy = 0.95
+	hull_damage = 1.9           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.4          # 护盾伤害系数
+    armor_damage = 1.5             # 护甲伤害系数
+    shield_penetration = 0.0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0       # 护甲穿透系数
+	tracking = 0.50
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "kk"
+	projectile_gfx = "sws_turbolaser_medium_green1"
+	tags = { weapon_type_kinetic weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "kk_s"
+	size = small
+
+	icon = "GFX_kk_s"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 200 max = 300 }
+	windup = { min = 0 max =  10 }
+	total_fire_time = 20
+	range = 200.0
+	accuracy = 0.95
+	hull_damage = 1.9           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 1.4          # 护盾伤害系数
+    armor_damage = 1.5             # 护甲伤害系数
+    shield_penetration = 0.0       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.0       # 护甲穿透系数
+	tracking = 0.50
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "kk"
+	projectile_gfx = "sws_turbolaser_small_green1"
+	tags = { weapon_type_kinetic weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = missile
+
+	key = "mss_l"
+	size = large
+
+	icon = "GFX_mss_l"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 600 max = 800 }
+	windup = { min = 0 max =  40 }
+	total_fire_time = 80
+	range = 200.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	total_fire_time = 80
+	range = 400.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	size_damage_factor = 0.06
+
+	missile_speed = 1
+	missile_evasion = 0.99
+	missile_shield = 1
+	missile_armor = 1
+	missile_health = 100
+	missile_retarget_range = 200
+
+	projectile_gfx = "swarmer_missiles"
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "mss"
+	tags = { weapon_type_explosive weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = missile
+
+	key = "mss_m"
+	size = medium
+
+	icon = "GFX_mss_m"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 300 max = 400 }
+	windup = { min = 0 max =  40 }
+	total_fire_time = 80
+	range = 200.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	size_damage_factor = 0.06
+
+	missile_speed = 1
+	missile_evasion = 0.99
+	missile_shield = 1
+	missile_armor = 1
+	missile_health = 100
+	missile_retarget_range = 200
+
+	projectile_gfx = "swarmer_missiles"
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "mss"
+	tags = { weapon_type_explosive weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+weapon_component_template = {
+	type = missile
+
+	key = "mss_s"
+	size = small
+
+	icon = "GFX_mss_s"
+	icon_frame = 1
+
+	firing_arc = 360
+	#static_rotation = yes
+	#use_ship_main_target = yes
+	prerequisites = { "tech_fgt1" }
+	
+	damage = { min = 150 max = 200 }
+	windup = { min = 0 max =  40 }
+	total_fire_time = 80
+	range = 200.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	total_fire_time = 80
+	range = 400.0
+	accuracy = 0.99
+	hull_damage = 2.0           # 船体伤害系数 1=正常，2 = +100%，0.5 = -50%，下面的护盾与护甲都一样
+    shield_damage = 0.4          # 护盾伤害系数
+    armor_damage = 0.5             # 护甲伤害系数
+    shield_penetration = 0.1       # 护盾穿透系数，1 = +100%，下面的护甲穿透也一样适用
+    armor_penetration = 0.1       # 护甲穿透系数
+	tracking = 0.40
+	size_damage_factor = 0.06
+
+	missile_speed = 1
+	missile_evasion = 0.99
+	missile_shield = 1
+	missile_armor = 1
+	missile_health = 100
+	missile_retarget_range = 200
+
+	projectile_gfx = "swarmer_missiles"
+	power = -1
+	resources = {                   # 资源，cost花费，produces生产，upkeep维护费
+        category = ship_components  # 所属的经济分类
+        cost = {
+            alloys = 1
+        }
+        produces = {
+            energy = 0
+            minerals = 0
+            food = 0
+        }
+        upkeep = {
+            energy = 0.5
+            alloys = 0.5
+        }
+    }
+	component_set = "mss"
+	tags = { weapon_type_explosive weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf}
+	ai_tags = { weapon_role_anti_armor gunship }
+
+	
+}
+
+strike_craft_component_template = {
+	key = k_st
+	size = large
+	entity = "ag_alpha_dron1e_1_entity"
+	weapon_type = point_defence
+
+	prerequisites = { "tech_fgt1" }
+
+	icon = GFX_k_st
+	icon_frame = 1
+
+	power = 0
+
+	# use_ship_kill_target = no
+
+	damage = { min = 10 max = 40 }
+	hull_damage = 1.2
+	shield_damage = 1.2
+	shield_penetration = 0.0
+	armor_damage = 1.2
+	armor_penetration = 0.0
+	# windup = { min = @ag_adv_fallen_empire_$ag_size_short$_windup_min max = @ag_adv_fallen_empire_$ag_size_short$_windup_max }
+
+	range = 50
+	accuracy = 1
+	tracking = 1
+	size_damage_factor = 0.01
+
+	ship_behavior = fighters_behavior
+	count = 10
+	regeneration_per_day = 1
+	launch_time = 1
+	cooldown = 1
+	evasion = 0.95
+	speed = 1000
+	rotation_speed = 1111
+	acceleration = 1111
+	engagement_range = 200
+	shield = 12
+	armor = 40
+	health = 20
+
+	projectile_gfx = "sws_turbolaser_small_green1"
+	tags = { weapon_type_strike_craft weapon_type_point_defense weapon_type_sg weapon_type_df_mdf weapon_type_ac_mdf }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+
+	component_set = ksk
+
+	point_defence_targets = { "strike_craft" }
+}
+
+
+utility_component_template = {
+	key = "sgg_Sensor"
+	size = medium
+	icon = "GFX_sscc"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+		}
+		upkeep = {
+			energy = 0.4
+			alloys = 0.08
+		}
+	}
+	sensor_range = 15
+	hyperlane_range = 20
+	
+	ship_modifier = {
+		ship_tracking_add = 100
+	}
+	
+	prerequisites = { "tech_fgt1" }
+	component_set = "sensor_components"
+}
+
+
+utility_component_template = {
+	key = "sgg_Reactor"
+	size = large
+	icon = "GFX_powc"
+	icon_frame = 1
+	power = 80000000
+	prerequisites = { "tech_fgt1" }
+	component_set = "power_core"
+	#ftl_magnet = yes #超空间陷阱/超光速陷阱
+}
+utility_component_template = {
+	key = "sgg_Thruster"
+	size = small
+	icon = "GFX_arru"
+	icon_frame = 1
+	power = -20
+	ftl = yes
+	jumpdrive = yes
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+		}
+		upkeep = {
+			energy = 2
+			alloys = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 2
+		ship_evasion_add = 100
+	}
+
+	
+	prerequisites = { "tech_fgt1" }
+	component_set = "thruster_components"
+}
+utility_component_template = {
+	key = "sg_Aura_1"
+	size = medium
+	icon = "GFX_sura"
+	icon_frame = 1
+	power = -2000
+	component_set = "ship_aura_components"
+	prerequisites = { "tech_fgt1" }
+
+
+	hostile_aura = {
+		name = "11"
+		radius = 2000
+		apply_on = ships
+		stack_info = {
+			id = sg_Aura_1
+			priority = 10
+		}
+		modifier = {
+			ship_accuracy_mult = -0.05
+		}
+
+
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+utility_component_template = {
+	key = "sgg_Computer"
+	size = small
+	icon = "GFX_sura"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.04
+		}
+	}
+	upgrade_path = SRA_Computer
+	component_set = "combat_computers"
+	ship_behavior = "sglongrange_behavior"
+	prerequisites = { "tech_fgt1" }
+	potential = {
+		NOR = {
+			is_ship_class = shipclass_military_station
+			ship_uses_starbase_components = yes
+		}
+	}
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.5
+		ship_weapon_range_mult = 0.5
+		ship_accuracy_add = 50
+	}
+	
+}
+
+utility_component_template = {
+	key = "KSP_A"
+	size = aux
+	icon = "GFX_ksp_a"
+	icon_frame = 1
+	ship_limit = 1
+	power = -10
+	prerequisites = { "tech_fgt3" }
+	potential = {
+		OR = {
+			is_ship_size = SG_NLYT
+			is_ship_size = SG_GSRW
+			is_ship_size = SG_qn
+			is_ship_size = SG_kg
+		}
+	}
+	ship_modifier = {
+		ship_accuracy_add = 0.01
+		weapon_type_sg_speed_mult = 0.2
+		
+	}
+	component_set = "ska"
+}

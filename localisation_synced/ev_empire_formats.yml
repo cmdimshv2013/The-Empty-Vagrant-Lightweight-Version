@@ -1,8 +1,0 @@
-﻿l_default:
- 
- format.empty_vagrant_base.1: "[This.GetSpeciesName] <ev_name_03> <ev_name_01> <ev_name_02>"
- format.empty_vagrant_base.2: "<ev_name_01> of [This.Capital.System.GetName] <ev_name_02>"
- format.empty_vagrant_base.3: "[This.GetSpeciesName] <ev_name_01> <ev_name_02>"
- format.empty_vagrant_base.4: "The <ev_name_01> <ev_name_02> of [This.GetRulerName]"
-
- Coalition: "United"

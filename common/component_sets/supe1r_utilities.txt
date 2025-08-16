@@ -1,0 +1,149 @@
+
+component_set = {
+	key = "ss"
+
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "s1s"
+
+	icon = "GFX_pt_shot"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "s2s"
+
+	icon = "GFX_lz_l"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "s3s"
+
+	icon = "GFX_zc_l"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "s4s"
+
+	icon = "GFX_ms_l"
+	icon_frame = 1
+}
+component_set = {
+	key = "s00s"
+
+	icon = "GFX_fz_st"
+	icon_frame = 1
+}
+component_set = {
+	key = "s000s"
+
+	icon = "GFX_yz_st"
+	icon_frame = 1
+}
+component_set = {
+	key = "pt"
+
+	icon = "GFX_otm_l"
+	icon_frame = 1
+}
+component_set = {
+	key = "zl"
+
+	icon = "GFX_lzz_l"
+	icon_frame = 1
+}
+component_set = {
+	key = "kk"
+
+	icon = "GFX_kk_m"
+	icon_frame = 1
+}
+component_set = {
+	key = "mss"
+
+	icon = "GFX_mss_l"
+	icon_frame = 1
+}
+component_set = {
+	key = "ksk"
+
+	icon = "GFX_k_st"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "gzgz"
+
+	icon = "GFX_sp_gz"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "jnlz1"
+
+	icon = "GFX_jn_lz"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "lllzzz"
+
+	icon = "GFX_sp_lzz"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "mslmsl"
+
+	icon = "GFX_ms_spa"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "psps"
+
+	icon = "GFX_drnn"
+	icon_frame = 1
+}
+component_set = {
+	key = "sp_TTT"
+
+	icon = "GFX_super_nll_laser"
+	icon_frame = 1
+}
+component_set = {
+	key = "sp_TxT"
+
+	icon = "GFX_sub_nll_laser"
+	icon_frame = 1
+}
+component_set = {
+	key = "sp_TTT1"
+
+	icon = "GFX_super_nll_laser"
+	icon_frame = 1
+}
+component_set = {
+	key = "sp_TxT1"
+
+	icon = "GFX_sub_nll_laser"
+	icon_frame = 1
+}
+component_set = {
+	key = "sp_TxT111"
+
+	icon = "GFX_sub_nll_laser"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ska"
+
+	icon = "GFX_ksp_a"
+	icon_frame = 1
+}

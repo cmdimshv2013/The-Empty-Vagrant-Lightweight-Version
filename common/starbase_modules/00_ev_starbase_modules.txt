@@ -9,81 +9,90 @@ anchorage_ev = {
 	icon = "GFX_sb_anchorage_ev"
 	section = "ANCHORAGE_STARBASE_SECTION"
 	construction_days = 180
-	
 	potential = {
 		exists = owner
-		owner = { 
-			is_country_type = default_ev 
+		owner = {
+			is_default_ev_country_type = yes
 		}
 	}
-	
 	resources = {
 		category = starbase_modules
 		cost = {
 			alloys = 50
 		}
-
 		upkeep = {
 			energy = 1
 		}
 	}
-
 	triggered_country_modifier = {
-		potential = { 
-			owner = { is_country_type = default_ev }
+		potential = {
+			owner = {
+				is_default_ev_country_type = yes
+			}
 		}
 		country_naval_cap_add = 6
 	}
 	triggered_country_modifier = {
-		potential = { 
+		potential = {
 			AND = {
-				owner = { is_country_type = default_ev }
+				owner = {
+					is_default_ev_country_type = yes
+				}
 				has_starbase_building = naval_logistics_office
-				}
-		 }
+			}
+		}
 		country_naval_cap_add = 2
 	}
 	triggered_country_modifier = {
-		potential = { 
+		potential = {
 			AND = {
-					owner = { has_technology = tech_anchorage_ev_add_1 }
+				owner = {
+					has_technology = tech_anchorage_ev_add_1
 				}
-		 }
+			}
+		}
 		country_naval_cap_add = 2
 	}
 	triggered_country_modifier = {
-		potential = { 
+		potential = {
 			AND = {
-					owner = { has_technology = tech_anchorage_ev_add_2 }
+				owner = {
+					has_technology = tech_anchorage_ev_add_2
 				}
-		 }
+			}
+		}
 		country_naval_cap_add = 2
 	}
+	# triggered_country_modifier = {
+	# 	potential = {
+	# 		AND = {
+	# 			owner = {
+	# 				has_technology = tech_anchorage_ev_add_3
+	# 			}
+	# 		}
+	# 	}
+	# 	country_naval_cap_add = 2
+	# }
+	# triggered_country_modifier = {
+	# 	potential = {
+	# 		AND = {
+	# 			owner = {
+	# 				has_technology = tech_anchorage_ev_add_4
+	# 			}
+	# 		}
+	# 	}
+	# 	country_naval_cap_add = 2
+	# }
 	triggered_country_modifier = {
-		potential = { 
+		potential = {
 			AND = {
-					owner = { has_technology = tech_anchorage_ev_add_3 }
+				owner = {
+					has_ascension_perk = ev_very_great_fleet
 				}
-		 }
-		country_naval_cap_add = 2
-	}
-	triggered_country_modifier = {
-		potential = { 
-			AND = {
-					owner = { has_technology = tech_anchorage_ev_add_4 }
-				}
-		 }
-		country_naval_cap_add = 2
-	}
-	triggered_country_modifier = {
-		potential = { 
-			AND = {
-					owner = { has_ascension_perk = ev_very_great_fleet  }
-				}
-		 }
+			}
+		}
 		country_naval_cap_add = 6
 	}
-	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
@@ -94,14 +103,13 @@ anchorage_ev = {
 				type = anchorage_ev
 				count < 2
 			}
-		}		
+		}
 		modifier = {
 			factor = 0.1
 			count_starbase_modules = {
 				type = anchorage_ev
-				count > 2 
+				count > 2
 			}
-		}	
+		}
 	}
 }
-
